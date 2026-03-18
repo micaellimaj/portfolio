@@ -1,8 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image"
-import { Button } from "@/components/ui/button";
-import { Github, ExternalLink, ChevronDown } from "lucide-react";
+import { Github, ExternalLink, ChevronDown, Presentation, FileText } from "lucide-react";
 
 const FeaturedWork = () => {
     const [filter, setFilter] = useState("Todos");
@@ -15,7 +14,7 @@ const FeaturedWork = () => {
             description: "Sistema full-stack para monitoramento climático em tempo real. Utiliza NestJS para a API, Go para processamento de alto desempenho, React para interface de usuário e Python com Gemini API para análise preditiva de dados meteorológicos.",
             image: "/images/feature-work/climatebrain.png",
             roles: ["NestJS", "Go", "Python", "Gemini API", "React"],
-            url: "https://github.com/micaellimaj/desafio-gdash-2025-02/tree/main"
+            github_url: "https://github.com/micaellimaj/desafio-gdash-2025-02/tree/main"
         },
         {
             title: "Caruaru Saúde - Plataforma de Serviços de Saúde",
@@ -24,53 +23,62 @@ const FeaturedWork = () => {
             description: "Plataforma Full Stack desenvolvida para conectar cidadãos do Agreste pernambucano a serviços médicos. O sistema centraliza o agendamento de consultas e o mapeamento de unidades de saúde, otimizando o acesso à rede pública regional.",
             image: "/images/feature-work/caruaru_saude.jpeg",
             roles: ["Python", "Django", "HTML/CSS", "JavaScript", "API", "Django ORM"],
-            url: "https://github.com/micaellimaj/Caruaru_Saude"
+            github_url: "https://github.com/micaellimaj/Caruaru_Saude",
+            slides_url: "https://www.canva.com/design/DAGgWWMl8VQ/s2XDci1KxHqfEGas2QJ2KA/view?utm_content=DAGgWWMl8VQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4112aade7c",
+            doc_url: "https://docs.google.com/document/d/1pEw4LYnfh1pbuMeG3k8QeFtqCxvXlz2MEeL4Mtqfztk/edit?tab=t.0",
+            deploy_url: "https://www.canva.com/design/DAGggzegzE4/Jk8OixOBUiCpbn08yUgKbw/view?utm_content=DAGggzegzE4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb22456d414"
         },
-
         {
             title: "Desafio Back-End - Mario Maker API",
             date: "Maio de 2025",
             category: "Dev",
-            description: "PI RESTful robusta desenvolvida para a gestão de ativos e colaboração em jogos inspirados no universo Mario. O sistema permite que criadores gerenciem o ciclo de vida de fases e elementos, promovendo o trabalho em equipe através de um modelo de permissões detalhado.",
+            description: "API RESTful robusta desenvolvida para a gestão de ativos e colaboração em jogos inspirados no universo Mario.",
             image: "/images/feature-work/Mario_poster.png",
-            roles: ["Node.js", "Express.js", "PostgreSQL", "Multer", "API", "Authentication"],
-            url: "https://github.com/micaellimaj/Caruaru_Saude"
+            roles: ["Node.js", "Express.js", "PostgreSQL", "API"],
+            github_url: "https://github.com/micaellimaj/Desafio-Back-End-Super-Mario-Maker-API",
+            slides_url: "https://desempenho-estudantil-sql.my.canva.site/apresenta-o-projeto-mario-maker-api"
         },
-           {
+        {
             title: "Análise e Predição de Dados - Preços de Imóveis em NY",
             date: "Março de 2025",
             category: "Dev",
-            description: "Projeto end-to-end de ciência de dados focado na análise do mercado imobiliário de Nova York. O pipeline abrange desde o tratamento de inconsistências de dados reais até a implementação de modelos preditivos e algoritmos de agrupamento para segmentação de mercado.",
+            description: "Projeto end-to-end de ciência de dados focado na análise do mercado imobiliário de Nova York.",
             image: "/images/feature-work/dadosNY.jpeg",
-            roles: ["EDA", "Regression", "Data Analysis","Data Visualization", "Classification","K-Means Clustering","Metric Evaluation","engenharia de features","prediction", "pandas", "scikit-learn"],
-            url: "https://github.com/micaellimaj/Analise-de-dados-SQL-Desempenho-estudantil"
+            roles: ["EDA", "Regression", "Data Analysis", "scikit-learn"],
+            github_url: "https://github.com/micaellimaj/Modelo_Predicao_De_Precos_Imoveis",
+            slides_url: "https://desempenho-estudantil-sql.my.canva.site/apresenta-o-financeira-amarelo-negrito-formas-relat-rio-de-finan-as"
         },
         {
             title: "Análise de Dados Com SQL - Desempenho Estudantil",
             date: "Julho de 2025",
             category: "Dev",
-            description: "Projeto de análise de dados educacionais utilizando SQL para identificar padrões de desempenho estudantil. Inclui modelagem de banco de dados, consultas complexas e visualização de resultados para insights acionáveis.",
+            description: "Projeto de análise de dados educacionais utilizando SQL para identificar padrões de desempenho estudantil.",
             image: "/images/feature-work/projetosql.png",
-            roles: ["SQL", "AWS", "Data Analysis","Data Visualization", "ETL","AWS Athena"],
-            url: "https://github.com/micaellimaj/Analise-de-dados-SQL-Desempenho-estudantil"
+            roles: ["SQL", "AWS", "Data Analysis", "ETL"],
+            github_url: "https://github.com/micaellimaj/Analise-de-dados-SQL-Desempenho-estudantil",
+            slides_url: "https://desempenho-estudantil-sql.my.canva.site/"
         },
         {
             title: "Painel de BI para Instituição Financeira - Banvic",
             date: "Agosto de 2025",
             category: "Power BI",
-            description: "Projeto de modernização analítica focado na transição de uma cultura de dados conservadora para uma gestão estratégica e orientada a dados (Data-Driven). O projeto entrega um ecossistema de BI completo, superando gargalos de governança e métodos legados.",
+            description: "Projeto de modernização analítica focado na transição de uma cultura de dados para uma gestão estratégica.",
             image: "/images/feature-work/banvic.png", 
-            roles: ["DAX", "ETL", "Power BI", "Power Query", "DAX", "KPIs", "Data Visualization", "Data Modeling", "Data Analysis"],
-            url: "https://bit.ly/Painel-Banvic"
+            roles: ["DAX", "Power BI", "KPIs", "Data Modeling"],
+            github_url: "https://github.com/micaellimaj/Banvic-Data-Analytics",
+            doc_url: "https://www.canva.com/design/DAGyVw_Dujw/spEMGroQSQcXudaAa-yJQg/view?utm_content=DAGyVw_Dujw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0ca5afcf9e",
+            deploy_url: "https://bit.ly/Painel-Banvic"
         },
-         {
+        {
             title: "Northwind — Integração & BI 360º",
             date: "Julho de 2024",
             category: "Power BI",
-            description: "Modernização analítica unificando 14 tabelas de dados. O projeto inclui auditoria via Python/Jupyter para integridade de dados e a construção de um painel de 7 páginas no Power BI para eliminar silos de informação e otimizar a performance da loja.",
+            description: "Modernização analítica unificando 14 tabelas de dados via Python/Jupyter e Power BI.",
             image: "/images/feature-work/north.png", 
             roles: ["Power BI", "Python", "Jupyter", "ETL"],
-            url: "https://app.powerbi.com/view?r=eyJrIjoiNjY2ZWJjZWUtMGQ0NC00YTZhLTliOWEtZjFjNzVmMmM1OTg4IiwidCI6IjUxZGQ3ZDM4LTYwNzctNDgzNy1hYTE0LWFlNDNmZThiM2ViMCJ9&pageName=ReportSection685643602175c2c0ef82"
+            github_url: "https://github.com/micaellimaj/Northwind-Traders",
+            doc_url: "https://docs.google.com/document/d/14KwQmesLRATb4_sY0ay5mzLYv6AqGHPqVG4Fnl7aMP4/edit?tab=t.0",
+            deploy_url: "https://app.powerbi.com/view?r=eyJrIjoiNjY2ZWJjZWUtMGQ0NC00YTZhLTliOWEtZjFjNzVmMmM1OTg4IiwidCI6IjUxZGQ3ZDM4LTYwNzctNDgzNy1hYTE0LWFlNDNmZThiM2ViMCJ9&pageName=ReportSection685643602175c2c0ef82"
         },
         {
             title: "Market Insights — Gestão de Filiais",
@@ -79,7 +87,7 @@ const FeaturedWork = () => {
             description: "Dashboard financeiro interativo para redes de varejo. Inclui análise de receita por cidade via mapas de calor, segmentação avançada de clientes, monitoramento de impostos e performance por linha de produtos com navegação multipáginas.",
             image: "/images/feature-work/filial.png", 
             roles: ["Power BI", "DAX", "Financial Analysis", "UX Design"],
-            url: "https://bit.ly/Micael-Lima-Analista-de-dados-Relatorio-supermercados"
+            deploy_url: "https://bit.ly/Micael-Lima-Analista-de-dados-Relatorio-supermercados"
         },
         {
             title: "Student Wellness — Análise Comportamental",
@@ -88,9 +96,9 @@ const FeaturedWork = () => {
             description: "Estudo do impacto do álcool no desempenho acadêmico. Desafio superado na visualização de dados majoritariamente categóricos, criando correlações entre hábitos de consumo, notas e vida familiar com filtros dinâmicos por escola e gênero.",
             image: "/images/feature-work/escola.png", 
             roles: ["Power BI", "Data Analytics", "Categorial Data", "Social Insights"],
-            url: "https://app.powerbi.com/view?r=eyJrIjoiNjhkMGNlYmQtNmRkMi00MTJhLTliZDMtYTRhZGEzZGNlNWJlIiwidCI6IjUxZGQ3ZDM4LTYwNzctNDgzNy1hYTE0LWFlNDNmZThiM2ViMCJ9"
+            deploy_url: "https://app.powerbi.com/view?r=eyJrIjoiNjhkMGNlYmQtNmRkMi00MTJhLTliZDMtYTRhZGEzZGNlNWJlIiwidCI6IjUxZGQ3ZDM4LTYwNzctNDgzNy1hYTE0LWFlNDNmZThiM2ViMCJ9"
         },
-            ];
+    ];
 
     const filteredProjects = filter === "Todos" 
         ? featureWork 
@@ -124,14 +132,12 @@ const FeaturedWork = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 border-t border-primary/10">
                         {filteredProjects.map((value, index) => {
                             const isRightCol = index % 2 === 1;
-                            const isPowerBI = value.category === "Power BI";
 
                             return (
                                 <div
                                     key={index}
                                     className={`group flex flex-col gap-3.5 sm:gap-5 p-3.5 sm:p-6 border-b border-primary/10 ${isRightCol ? 'md:border-l' : ''}`}
                                 >
-                                    {/* Container da Imagem */}
                                     <div className="overflow-hidden rounded-xl border border-primary/5 aspect-video relative">
                                         <Image
                                             src={value.image}
@@ -144,24 +150,39 @@ const FeaturedWork = () => {
                                         </div>
                                     </div>
 
-                                    {/* Informações e Descrição Expansível */}
                                     <div className="flex flex-col gap-1 sm:gap-2 px-2">
                                         <div className="flex items-center justify-between">
                                             <h4 className="text-lg font-bold">{value.title}</h4>
-                                            <a 
-                                                href={value.url} 
-                                                target="_blank" 
-                                                className="p-2 hover:bg-primary/5 rounded-full transition-colors"
-                                            >
-                                                {isPowerBI ? <ExternalLink size={20} className="text-violet-700" /> : <Github size={20} className="text-primary" />}
-                                            </a>
+                                            
+                                            {/* ÁREA DE LINKS DINÂMICOS */}
+                                            <div className="flex gap-2">
+                                                {value.github_url && (
+                                                    <a href={value.github_url} target="_blank" className="p-2 hover:bg-primary/5 rounded-full transition-colors" title="Ver Código">
+                                                        <Github size={20} className="text-primary" />
+                                                    </a>
+                                                )}
+                                                {value.slides_url && (
+                                                    <a href={value.slides_url} target="_blank" className="p-2 hover:bg-primary/5 rounded-full transition-colors" title="Apresentação">
+                                                        <Presentation size={20} className="text-orange-600" />
+                                                    </a>
+                                                )}
+                                                {value.doc_url && (
+                                                    <a href={value.doc_url} target="_blank" className="p-2 hover:bg-primary/5 rounded-full transition-colors" title="Documentação">
+                                                        <FileText size={20} className="text-blue-600" />
+                                                    </a>
+                                                )}
+                                                {value.deploy_url && (
+                                                    <a href={value.deploy_url} target="_blank" className="p-2 hover:bg-primary/5 rounded-full transition-colors" title="Visualizar">
+                                                        <ExternalLink size={20} className="text-violet-700" />
+                                                    </a>
+                                                )}
+                                            </div>
                                         </div>
 
                                         <p className="text-sm text-secondary font-medium mb-2">
                                             {value.roles.join(' • ')}
                                         </p>
 
-                                        {/* Descrição "Suspensa" (Accordion) */}
                                         <details className="group/details">
                                             <summary className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-primary cursor-pointer list-none hover:opacity-70 transition-opacity">
                                                 <span>Ver detalhes do projeto</span>

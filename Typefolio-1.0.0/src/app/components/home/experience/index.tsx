@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image"
-import { Github, ExternalLink } from "lucide-react"; // Importe os ícones para os links
+import { Github, ExternalLink, FileText, Video, Globe } from "lucide-react";
 
 const Experience = () => {
     const experienceData = [
@@ -10,29 +10,32 @@ const Experience = () => {
             endYear: "Presente",
             location: "Toritama, PE (Remoto)",
             icon: "/images/experience/crcursos.svg",
-            githubUrl: "https://github.com/micaellimaj/CR_Cursos_App", // Adicione seu link aqui
+            projectLinks: [
+                { label: "GitHub", url: "https://github.com/micaellimaj/CR_Cursos_App", icon: <Github size={14} /> },
+                { label: "Documentação", url: "https://docs.google.com/document/d/1Nd0ikyZJDA96FFro96SFDu_jHJm8G6StRQycPI-udqc/edit?tab=t.0", icon: <FileText size={14} /> }
+            ],
             bulletPoints: [
-                "Desenvolvimento Full Stack (Node.js/React Native): Construção de ecossistema educacional modular seguindo Clean Architecture, com front-end segmentado por perfis e separação rigorosa entre UI e lógica de negócio.",
-                "Garantia de Qualidade (QA): Implementação de suíte robusta de testes unitários e de integração (Jest/Supertest) em 12+ módulos.",
-                "Infraestrutura e DevOps: Gestão de serviços Firebase, documentação via Swagger/OpenAPI e conteinerização com Docker/Docker Compose."
+                "Desenvolvimento Full Stack (Node.js/React Native): Construção de ecossistema educacional modular seguindo Clean Architecture.",
+                "Garantia de Qualidade (QA): Implementação de suíte robusta de testes unitários e de integração (Jest/Supertest).",
+                "Infraestrutura e DevOps: Gestão de serviços Firebase e conteinerização com Docker."
             ]
         },
         {
             role: "Estagiário de Desenvolvimento Full-Stack — SIAPESQ",
             startYear: "Maio de 2025",
-            endYear: "Desezembro de 2025",
+            endYear: "Dezembro de 2025",
             location: "Rio Grande, RS (Remoto)",
             icon: "/images/experience/siapesq.svg",
             bulletPoints: [
-                "Desenvolvimento de APIs RESTful e lógica de negócio em TypeScript (NestJS/Express.js) com foco em segurança (JWT, Guards e permissões por papéis).",
-                "Modelagem de banco PostgreSQL com Prisma ORM e deploys em NeonDB e Render.",
-                "Front-end em React para painel administrativo com dashboards interativos e gestão de arquivos em Cloudflare R2/AWS S3."
+                "Desenvolvimento de APIs RESTful e lógica de negócio em TypeScript (NestJS/Express.js).",
+                "Modelagem de banco PostgreSQL com Prisma ORM e deploys em NeonDB.",
+                "Front-end em React para painel administrativo com dashboards interativos."
             ]
         },
         {
             role: "Tutor de Tecnologia — CESAR School",
             startYear: "Abril de 2025",
-            endYear: "Desezembro de 2025",
+            endYear: "Dezembro de 2025",
             location: "Santa Cruz, PE",
             icon: "/images/experience/cesar.svg",
             bulletPoints: [
@@ -46,12 +49,15 @@ const Experience = () => {
             location: "Caruaru, PE (Remoto)",
             icon: "/images/experience/frelar.svg",
             projectLinks: [
-                { label: "GitHub - Dinha Kids", url: "https://github.com/micaellimaj/Sistema_Dinha_Kids" },
-                { label: "GitHub - Site Institucional", url: "https://github.com/micaellimaj/Site_Fundacao_Macedo" }
+                { label: "Dinha Kids (GitHub)", url: "https://github.com/micaellimaj/Sistema_Dinha_Kids", icon: <Github size={14} /> },
+                { label: "Dinha Kids (Doc)", url: "https://docs.google.com/document/d/1Euuo8tCh54hrV0XyW2pHWVBSirZnhpLjRUxGRz9b5sI/edit?tab=t.0", icon: <FileText size={14} /> },
+                { label: "Dinha Kids (Vídeo)", url: "https://www.canva.com/design/DAGghIXAI9w/AellKNqh-d12lPLR3W48EA/view?utm_content=DAGghIXAI9w&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc99da75059", icon: <Video size={14} /> },
+                { label: "Fundação Macedo (GitHub)", url: "https://github.com/micaellimaj/Site_Fundacao_Macedo", icon: <Github size={14} /> },
+                { label: "Fundação Macedo (Deploy)", url: "https://fundacaomacedo.netlify.app/", icon: <Globe size={14} /> }
             ],
             bulletPoints: [
-                "Projeto 1 (Dinha Kids): Sistema de gerenciamento de confecção infantil com Java/Spring Boot e Dashboard no Power BI.",
-                "Projeto 2 (Site Institucional): Criação de site responsivo com JS e boas práticas de design."
+                "Projeto 1 (Dinha Kids): Sistema de gerenciamento de confecção infantil com Java/Spring Boot.",
+                "Projeto 2 (Fundação Macedo): Criação de site responsivo com JS e boas práticas de design."
             ]
         }
     ];
@@ -64,7 +70,7 @@ const Experience = () => {
                         <p className="text-sm tracking-[2px] text-primary uppercase font-medium">Experiência Profissional</p>
                     </div>
                     <div className="border-t border-primary/10">
-                        <div className="flex flex-col max-w-3xl mx-auto px-4 sm:px-7 py-9 md:py-16 ">
+                        <div className="flex flex-col max-w-3xl mx-auto px-4 sm:px-7 py-9 md:py-16">
                             {experienceData.map((value, index) => (
                                 <div key={index} className="flex flex-col gap-5 border-dashed border-b border-primary/10 last:border-b-0 pt-8 sm:pt-10 pb-8 sm:pb-10 first:pt-0 last:pb-0">
                                     <div className="flex flex-wrap gap-5 items-center justify-between">
@@ -73,7 +79,7 @@ const Experience = () => {
                                             <h5 className="text-lg font-semibold">{value.role}</h5>
                                         </div>
                                         <div className="flex items-center gap-2.5 border border-primary/10 rounded-lg py-1.5 px-3">
-                                            <div className={`w-4 h-2 rounded-sm ${value.endYear === "Present" ? 'bg-primary' : 'bg-primary/20'} `} />
+                                            <div className={`w-4 h-2 rounded-sm ${value.endYear === "Presente" ? 'bg-primary' : 'bg-primary/20'} `} />
                                             <p className="text-sm text-primary font-medium">{value.startYear} – {value.endYear}</p>
                                         </div>
                                     </div>
@@ -87,19 +93,21 @@ const Experience = () => {
                                         ))}
                                     </ul>
 
-                                    {/* Links do GitHub / Projetos */}
-                                    <div className="flex flex-wrap gap-3 mt-2">
-                                        {value.githubUrl && (
-                                            <a href={value.githubUrl} target="_blank" className="flex items-center gap-2 text-sm font-medium text-primary hover:underline">
-                                                <Github size={16} /> Ver no GitHub
-                                            </a>
-                                        )}
-                                        {value.projectLinks?.map((link, lIdx) => (
-                                            <a key={lIdx} href={link.url} target="_blank" className="flex items-center gap-2 text-sm font-medium text-primary hover:underline border border-primary/10 rounded-md px-2 py-1">
-                                                <ExternalLink size={14} /> {link.label}
-                                            </a>
-                                        ))}
-                                    </div>
+                                    {/* Renderização de Links de Projetos */}
+                                    {value.projectLinks && (
+                                        <div className="flex flex-wrap gap-2 mt-2">
+                                            {value.projectLinks.map((link, lIdx) => (
+                                                <a 
+                                                    key={lIdx} 
+                                                    href={link.url} 
+                                                    target="_blank" 
+                                                    className="flex items-center gap-2 text-xs font-medium text-primary hover:bg-primary/5 border border-primary/10 rounded-md px-3 py-1.5 transition-colors"
+                                                >
+                                                    {link.icon} {link.label}
+                                                </a>
+                                            ))}
+                                        </div>
+                                    )}
                                 </div>
                             ))}
                         </div>
