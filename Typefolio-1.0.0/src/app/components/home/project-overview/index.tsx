@@ -1,7 +1,7 @@
 "use client";
 import { useState, useCallback } from "react";
 import Image from "next/image";
-import { Linkedin, Quote, ChevronLeft, ChevronRight, ChevronDown } from "lucide-react";
+import { Linkedin, ChevronLeft, ChevronRight, ChevronDown } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
 
 interface Review {
