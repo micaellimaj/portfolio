@@ -23,7 +23,7 @@ const AboutMe = () => {
                 <div className="border-x border-primary/10 bg-[url('/images/about-me/about-me-bg.svg')] bg-cover bg-center bg-no-repeat">
                     <div className="flex flex-col gap-9 sm:gap-12 max-w-3xl mx-auto px-4 sm:px-7 py-11 md:py-20">
                         <div className="flex flex-col gap-4">
-                            <p className="text-sm tracking-[2px] text-primary uppercase font-medium">About Me</p>
+                            <p className="text-sm tracking-[2px] text-primary uppercase font-medium">Sobre Me</p>
                             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[32px]">
                                 Olá! Sou Micael — Desenvolvedor Full Stack e Analista de Dados baseado em Toritama, atualmente <span className="bg-[linear-gradient(90deg,_rgba(243,202,77,0.4)_0%,_rgba(243,202,77,0.05)_100%)]">desenvolvendo minha habilidade</span> na <span className="border-b-2">área de Desenvolvimento de Software e Engenharia de dados</span>, focado em ecossistemas de IA e Inovação.
                             </h2>
