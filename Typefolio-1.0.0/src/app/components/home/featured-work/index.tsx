@@ -8,27 +8,24 @@ const FeaturedWork = () => {
 
     const featureWork = [
         {
+            title: "Desafio Dev -  PetShop",
+            date: "Fevereiro de 2026",
+            category: "Dev",
+            description: "API RESTful para gestão de pet shop, com funcionalidades de cadastro,  e controle de animais. Desenvolvida com NestJS, React e PostgreSQL.",
+            image: "/images/feature-work/petshop.png",
+            roles: ["NestJS", "API",  "React", "Tailwind CSS", "Typescript","prisma","Nextjs","postgreSQL","Docker"],
+            github_url: "https://github.com/micaellimaj/desafio-jr"
+        },
+        {
             title: "Climate Brain — IA & Monitoramento",
-            date: "Dezembro 2025",
+            date: "Dezembro de 2025",
             category: "Dev",
             description: "Sistema full-stack para monitoramento climático em tempo real. Utiliza NestJS para a API, Go para processamento de alto desempenho, React para interface de usuário e Python com Gemini API para análise preditiva de dados meteorológicos.",
             image: "/images/feature-work/climatebrain.png",
-            roles: ["NestJS", "Go", "Python", "Gemini API", "React"],
+            roles: ["NestJS", "Go", "Python", "Gemini API", "React","Redis","pipeline de dados"],
             github_url: "https://github.com/micaellimaj/desafio-gdash-2025-02/tree/main"
         },
-        {
-            title: "Caruaru Saúde - Plataforma de Serviços de Saúde",
-            date: "Dezembro de 2024",
-            category: "Dev",
-            description: "Plataforma Full Stack desenvolvida para conectar cidadãos do Agreste pernambucano a serviços médicos. O sistema centraliza o agendamento de consultas e o mapeamento de unidades de saúde, otimizando o acesso à rede pública regional.",
-            image: "/images/feature-work/caruaru_saude.jpeg",
-            roles: ["Python", "Django", "HTML/CSS", "JavaScript", "API", "Django ORM"],
-            github_url: "https://github.com/micaellimaj/Caruaru_Saude",
-            slides_url: "https://www.canva.com/design/DAGgWWMl8VQ/s2XDci1KxHqfEGas2QJ2KA/view?utm_content=DAGgWWMl8VQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4112aade7c",
-            doc_url: "https://docs.google.com/document/d/1pEw4LYnfh1pbuMeG3k8QeFtqCxvXlz2MEeL4Mtqfztk/edit?tab=t.0",
-            deploy_url: "https://www.canva.com/design/DAGggzegzE4/Jk8OixOBUiCpbn08yUgKbw/view?utm_content=DAGggzegzE4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb22456d414"
-        },
-        {
+         {
             title: "Desafio Back-End - Mario Maker API",
             date: "Maio de 2025",
             category: "Dev",
@@ -47,6 +44,18 @@ const FeaturedWork = () => {
             roles: ["EDA", "Regression", "Data Analysis", "scikit-learn"],
             github_url: "https://github.com/micaellimaj/Modelo_Predicao_De_Precos_Imoveis",
             slides_url: "https://desempenho-estudantil-sql.my.canva.site/apresenta-o-financeira-amarelo-negrito-formas-relat-rio-de-finan-as"
+        },
+        {
+            title: "Caruaru Saúde - Plataforma de Serviços de Saúde",
+            date: "Dezembro de 2024",
+            category: "Dev",
+            description: "Plataforma Full Stack desenvolvida para conectar cidadãos do Agreste pernambucano a serviços médicos. O sistema centraliza o agendamento de consultas e o mapeamento de unidades de saúde, otimizando o acesso à rede pública regional.",
+            image: "/images/feature-work/caruaru_saude.jpeg",
+            roles: ["Python", "Django", "HTML/CSS", "JavaScript", "API", "Django ORM"],
+            github_url: "https://github.com/micaellimaj/Caruaru_Saude",
+            slides_url: "https://www.canva.com/design/DAGgWWMl8VQ/s2XDci1KxHqfEGas2QJ2KA/view?utm_content=DAGgWWMl8VQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4112aade7c",
+            doc_url: "https://docs.google.com/document/d/1pEw4LYnfh1pbuMeG3k8QeFtqCxvXlz2MEeL4Mtqfztk/edit?tab=t.0",
+            deploy_url: "https://www.canva.com/design/DAGggzegzE4/Jk8OixOBUiCpbn08yUgKbw/view?utm_content=DAGggzegzE4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb22456d414"
         },
         {
             title: "Análise de Dados Com SQL - Desempenho Estudantil",

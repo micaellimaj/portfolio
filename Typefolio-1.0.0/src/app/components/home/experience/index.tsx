@@ -17,6 +17,7 @@ interface ExperienceItem {
     endYear: string;
     location: string;
     icon: string;
+    roles: string[]; // Nova adição
     projectLinks?: ProjectLink[];
     shortSummary: string;
     fullDetails: {
@@ -39,6 +40,7 @@ const Experience = () => {
             endYear: "Presente",
             location: "Toritama, PE (Remoto)",
             icon: "/images/experience/crcursos.svg",
+            roles: ["Node.js", "React Native", "Expo", "Firebase", "Jest", "TypeScript"],
             shortSummary: "Desenvolvimento de ecossistema educacional modular com Node.js, React Native e suite robusta de testes (QA).",
             projectLinks: [
                 { label: "GitHub", url: "https://github.com/micaellimaj/CR_Cursos_App", icon: <Github size={12} /> },
@@ -64,6 +66,7 @@ const Experience = () => {
             endYear: "Dezembro de 2025",
             location: "Rio Grande, RS (Remoto)",
             icon: "/images/experience/siapesq.svg",
+            roles: ["NestJS", "TypeScript", "Prisma", "PostgreSQL", "React", "Tailwind CSS", "Docker", "API"],
             shortSummary: "Construção de Marketplace B2B/B2C de pescados utilizando NestJS, TypeScript e modelagem complexa em PostgreSQL.",
             fullDetails: {
                 situacao: "Desenvolvimento de Marketplace Digital e melhorias de segurança/UX na aplicação principal da SIAPESQ.",
@@ -82,9 +85,10 @@ const Experience = () => {
             role: "Tutor de Tecnologia",
             company: "CESAR School",
             startYear: "Abril de 2025",
-            endYear: "Dezembro de 2025",
+            endYear: "Setembro de 2025",
             location: "Santa Cruz, PE",
             icon: "/images/experience/cesar.svg",
+            roles: ["Python", "JavaScript", "HTML/CSS", "Git", "GitHub", "Metodologias Ágeis"],
             shortSummary: "Apoio pedagógico e técnico em trilhas de Desenvolvimento Web e Python para o programa Florescendo Talentos.",
             fullDetails: {
                 situacao: "Programa focado em formação técnica para estudantes do Ensino Médio.",
@@ -101,18 +105,18 @@ const Experience = () => {
             id: "freelance-web",
             role: "Desenvolvedor Web Freelance",
             company: "Projetos Diversos",
-            startYear: "2023",
-            endYear: "2024",
+            startYear: "Outubro de 2023",
+            endYear: "Abril de 2024",
             location: "Caruaru, PE",
             icon: "/images/experience/frelar.svg",
+            roles: ["Java", "Spring Boot", "MySQL", "Power BI", "Nextjs", "Tailwind CSS", "Thymeleaf"],
             shortSummary: "Desenvolvimento de sistemas de gestão (Java/Spring) e sites institucionais responsivos.",
             projectLinks: [
-                { label: "Dinha Kids", url: "https://github.com/micaellimaj/Sistema_Dinha_Kids", icon: <Github size={12} /> },
-                { label: "Dinha Kids", url: "https://docs.google.com/document/d/1Euuo8tCh54hrV0XyW2pHWVBSirZnhpLjRUxGRz9b5sI/edit?tab=t.0", icon: <FileText size={12} /> },
-                 
-                { label: "Dinha Kids", url: "https://www.canva.com/design/DAGghIXAI9w/AellKNqh-d12lPLR3W48EA/view?utm_content=DAGghIXAI9w&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc99da75059", icon: <PlayCircle size={12} /> },
-                { label: "Fundação Macedo", url: "https://github.com/micaellimaj/Site_Fundacao_Macedo", icon: <Github size={12} /> },
-                { label: "Fundação Macedo", url: "https://fundacaomacedo.netlify.app/", icon: <Globe size={12} /> }
+                { label: "Dinha Kids - Git", url: "https://github.com/micaellimaj/Sistema_Dinha_Kids", icon: <Github size={12} /> },
+                { label: "Dinha Kids - Documentação", url: "https://docs.google.com/document/d/1Euuo8tCh54hrV0XyW2pHWVBSirZnhpLjRUxGRz9b5sI/edit?tab=t.0", icon: <FileText size={12} /> },
+                { label: "Dinha Kids - Apresentação", url: "https://www.canva.com/design/DAGghIXAI9w/AellKNqh-d12lPLR3W48EA/view?utm_content=DAGghIXAI9w&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc99da75059", icon: <PlayCircle size={12} /> },
+                { label: "Fundação Macedo - Git", url: "https://github.com/micaellimaj/Site_Fundacao_Macedo", icon: <Github size={12} /> },
+                { label: "Fundação Macedo - Live Site", url: "https://fundacaomacedo.netlify.app/", icon: <Globe size={12} /> }
             ],
             fullDetails: {
                 situacao: "Participação em projetos de indústria têxtil e setor social.",
@@ -165,11 +169,20 @@ const Experience = () => {
                                             {item.shortSummary}
                                         </p>
 
+                                        {/* Tags de Tecnologias (Roles) */}
+                                        <div className="flex flex-wrap gap-1.5 pl-14 mt-1">
+                                            {item.roles.map((tech, idx) => (
+                                                <span key={idx} className="px-2 py-0.5 rounded-md bg-primary/[0.03] border border-primary/5 text-[9px] font-semibold text-primary/70 uppercase">
+                                                    {tech}
+                                                </span>
+                                            ))}
+                                        </div>
+
                                         {/* Links Rápidos */}
                                         {item.projectLinks && (
                                             <div className="flex flex-wrap gap-2 pl-14 mt-1">
                                                 {item.projectLinks.map((link, idx) => (
-                                                    <a key={idx} href={link.url} target="_blank" className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-tighter text-primary/60 hover:text-primary transition-colors border border-primary/10 rounded px-2 py-1">
+                                                    <a key={idx} href={link.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-tighter text-primary/60 hover:text-primary transition-colors border border-primary/10 rounded px-2 py-1">
                                                         {link.icon} {link.label}
                                                     </a>
                                                 ))}
