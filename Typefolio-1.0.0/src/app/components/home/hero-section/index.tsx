@@ -6,12 +6,12 @@ import { Button } from "@/components/ui/button";
 const HeroSection = () => {
     const socialIcon = [
         {
-            img: "/images/icon/linkedin-icon.svg", // Certifique-se de ter esse ícone em public/images/icon/
+            img: "/images/hero-sec/linkedin.svg",
             href: "https://www.linkedin.com/in/micael-lima-full-stack-software-engineer/",
             icon: "LinkedIn"
         },
         {
-            img: "/images/icon/github-icon.svg", // Certifique-se de ter esse ícone em public/images/icon/
+            img: "/images/hero-sec/Github.svg",             
             href: "https://github.com/micaellimaj",
             icon: "GitHub"
         },
@@ -33,7 +33,7 @@ const HeroSection = () => {
                             </div>
                             <div className="flex flex-col gap-2 sm:gap-3 items-center text-center xs:items-start">
                                 <h1 className="text-2xl sm:text-3xl font-bold">Micael José de Lima</h1>
-                                <p className="text-violet-700 font-medium">Full Stack Software Engineer & Data Analyst</p>
+                                <p className="text-violet-700 font-medium">Developer, Data & IA</p>
                                 <div className="flex items-center gap-2">
                                     <Image src={"/images/icon/map-icon.svg"} alt="map-icon" width={20} height={20} />
                                     <p className="text-primary">Toritama, Pernambuco</p>
@@ -56,7 +56,7 @@ const HeroSection = () => {
                                 </div>
                                 <Button asChild className="h-auto rounded-full p-0.5!">
                                     <Link
-                                        href="https://www.linkedin.com/in/micael-lima-full-stack-software-engineer/"
+                                        href="https://docs.google.com/forms/d/e/1FAIpQLSc6fPmiaBSlZAsfBI3sYeYutgvSpi8nIAY2hqQVJjbX6KUX7Q/viewform"
                                         target="_blank"
                                         className="inline-block p-0.5 rounded-full bg-[linear-gradient(96.09deg,_#9282F8_12.17%,_#F3CA4D_90.71%)]"
                                     >
