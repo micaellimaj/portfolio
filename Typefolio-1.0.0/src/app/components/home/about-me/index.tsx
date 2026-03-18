@@ -9,10 +9,12 @@ const AboutMe = () => {
         "Python & FastAPI", 
         "Data Engineering", 
         "Power BI", 
-        "Cloud Computing (AWS)", 
+        "Cloud Computing", 
         "SQL & NoSQL", 
         "React & Next.js", 
-        "DevOps (Docker)"
+        "DevOps & CI/CD", 
+        "Agile Methodologies", 
+        "Version Control (Git)",
     ];
 
     return (
@@ -23,10 +25,10 @@ const AboutMe = () => {
                         <div className="flex flex-col gap-4">
                             <p className="text-sm tracking-[2px] text-primary uppercase font-medium">About Me</p>
                             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[32px]">
-                                Olá! Sou Micael — Desenvolvedor Full Stack e Analista de Dados baseado em Toritama, atualmente <span className="bg-[linear-gradient(90deg,_rgba(243,202,77,0.4)_0%,_rgba(243,202,77,0.05)_100%)]">construindo soluções de alta performance</span> na <span className="border-b-2">CR Cursos</span>, focado em ecossistemas educacionais modulares.
+                                Olá! Sou Micael — Desenvolvedor Full Stack e Analista de Dados baseado em Toritama, atualmente <span className="bg-[linear-gradient(90deg,_rgba(243,202,77,0.4)_0%,_rgba(243,202,77,0.05)_100%)]">desenvolvendo minha habilidade</span> na <span className="border-b-2">área de Desenvolvimento de Software e Engenharia de dados</span>, focado em ecossistemas de IA e Inovação.
                             </h2>
                             <h5 className="text-secondary font-normal">
-                                Vencedor do Hackathon Caruaru Cidade Sustentável e pós-graduando em Engenharia de Dados e IA pela XP Educação.
+                                Graduado em Análise e Desenvolvimento de Sistemas, com cursos e projetos na área de Tecnologia e pós-graduando em Engenharia de Dados e IA pela XP Educação.
                             </h5>
                         </div>
                         <div className="flex flex-col gap-4">

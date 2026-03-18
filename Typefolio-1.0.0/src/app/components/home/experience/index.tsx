@@ -6,11 +6,11 @@ const Experience = () => {
     const experienceData = [
         {
             role: "Desenvolvedor Freelance Android/Full Stack — CR Cursos",
-            startYear: "2025",
-            endYear: "Present",
+            startYear: "Março de 2025",
+            endYear: "Presente",
             location: "Toritama, PE (Remoto)",
-            icon: "/images/icon/spark-icon.svg",
-            githubUrl: "https://github.com/micaellimaj", // Adicione seu link aqui
+            icon: "/images/experience/crcursos.svg",
+            githubUrl: "https://github.com/micaellimaj/CR_Cursos_App", // Adicione seu link aqui
             bulletPoints: [
                 "Desenvolvimento Full Stack (Node.js/React Native): Construção de ecossistema educacional modular seguindo Clean Architecture, com front-end segmentado por perfis e separação rigorosa entre UI e lógica de negócio.",
                 "Garantia de Qualidade (QA): Implementação de suíte robusta de testes unitários e de integração (Jest/Supertest) em 12+ módulos.",
@@ -19,10 +19,10 @@ const Experience = () => {
         },
         {
             role: "Estagiário de Desenvolvimento Full-Stack — SIAPESQ",
-            startYear: "2025",
-            endYear: "2025",
+            startYear: "Maio de 2025",
+            endYear: "Desezembro de 2025",
             location: "Rio Grande, RS (Remoto)",
-            icon: "/images/icon/asana-icon.svg",
+            icon: "/images/experience/siapesq.svg",
             bulletPoints: [
                 "Desenvolvimento de APIs RESTful e lógica de negócio em TypeScript (NestJS/Express.js) com foco em segurança (JWT, Guards e permissões por papéis).",
                 "Modelagem de banco PostgreSQL com Prisma ORM e deploys em NeonDB e Render.",
@@ -31,10 +31,10 @@ const Experience = () => {
         },
         {
             role: "Tutor de Tecnologia — CESAR School",
-            startYear: "2025",
-            endYear: "2025",
+            startYear: "Abril de 2025",
+            endYear: "Desezembro de 2025",
             location: "Santa Cruz, PE",
-            icon: "/images/icon/behance-icon.svg",
+            icon: "/images/experience/cesar.svg",
             bulletPoints: [
                 "Suporte pedagógico e técnico aos alunos no aprendizado de tecnologias web."
             ]
@@ -44,11 +44,10 @@ const Experience = () => {
             startYear: "2023",
             endYear: "2024",
             location: "Caruaru, PE (Remoto)",
-            icon: "/images/icon/twitter-icon.svg",
-            // Links específicos para os dois projetos
+            icon: "/images/experience/frelar.svg",
             projectLinks: [
-                { label: "GitHub - Dinha Kids", url: "https://github.com/micaellimaj" },
-                { label: "GitHub - Site Institucional", url: "https://github.com/micaellimaj" }
+                { label: "GitHub - Dinha Kids", url: "https://github.com/micaellimaj/Sistema_Dinha_Kids" },
+                { label: "GitHub - Site Institucional", url: "https://github.com/micaellimaj/Site_Fundacao_Macedo" }
             ],
             bulletPoints: [
                 "Projeto 1 (Dinha Kids): Sistema de gerenciamento de confecção infantil com Java/Spring Boot e Dashboard no Power BI.",

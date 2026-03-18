@@ -4,19 +4,19 @@ const Education = () => {
     // Dados extraídos diretamente do seu currículo
     const educationData = [
         {
-            date: "2026 — 2027",
+            date: "Março de 2026 —  Agosto de 2027",
             title: "Pós-graduação em Engenharia de Dados e IA",
             subtitle: "XP Educação"
         },
         {
-            date: "2023 — 2025",
+            date: "Fevereiro de 2023 — Dezembro de 2025",
             title: "Tecnólogo em Análise e Desenvolvimento de Sistemas",
             subtitle: "Unifavip Wyden"
         },
         {
             date: "2023 — 2026",
-            title: "Cursos de Especialização",
-            subtitle: "DIO (Python), EBAC (Analista de Dados), Data Science Academy (Eng. de Dados)"
+            title: "Cursos e Certificados em Desenvolvimento e Dados",
+            subtitle: "DIO (Back-end com Python), EBAC (Analista de Dados), Data Science Academy (Power BI e Eng. de Dados) Atlântico Avanti (Ciência de Dados e Machine Learning), Curso Em Video (Python, Git/Github) "
         }
     ];
 
@@ -26,7 +26,7 @@ const Education = () => {
                 <div className="border-x border-primary/10">
                     <div className="flex flex-col max-w-3xl mx-auto py-10 px-4 sm:px-7">
                         <div className="flex flex-col xs:flex-row gap-5 items-center justify-between">
-                            <p className="text-sm tracking-[2px] text-primary uppercase font-medium">Education</p>
+                            <p className="text-sm tracking-[2px] text-primary uppercase font-medium">Educação</p>
                         </div>
                     </div>
 
