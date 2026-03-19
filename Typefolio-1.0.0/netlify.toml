@@ -1,0 +1,20 @@
+[build]
+  # O diretório onde o Netlify deve entrar antes de rodar o comando
+  base = "Typefolio-1.0.0"
+  
+  # O comando para gerar a versão de produção
+  command = "npm run build"
+  
+  # Se você NÃO usa 'output: export' no next.config.ts, use .next
+  # Se você USA 'output: export', mude para "out"
+  publish = ".next"
+
+[build.environment]
+  # Aumenta a memória para evitar o erro de "Out of Memory" que você teve
+  NODE_OPTIONS = "--max-old-space-size=4096"
+  NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
