@@ -4,6 +4,7 @@ import Image from "next/image"
 import { Github, ExternalLink, ChevronDown, Presentation, FileText } from "lucide-react";
 
 const FeaturedWork = () => {
+    // 1. Alterado para incluir "Analytics" nas opções de filtro
     const [filter, setFilter] = useState("Todos");
 
     const featureWork = [
@@ -38,7 +39,8 @@ const FeaturedWork = () => {
         {
             title: "Análise e Predição de Dados - Preços de Imóveis em NY",
             date: "Março de 2025",
-            category: "Dev",
+            // 2. Atualizado para categoria Analytics
+            category: "Analytics",
             description: "Projeto end-to-end de ciência de dados focado na análise do mercado imobiliário de Nova York.",
             image: "/images/feature-work/dadosNY.jpeg",
             roles: ["EDA", "Regression", "Data Analysis", "scikit-learn"],
@@ -60,13 +62,15 @@ const FeaturedWork = () => {
         {
             title: "Análise de Dados Com SQL - Desempenho Estudantil",
             date: "Julho de 2025",
-            category: "Dev",
+            // 3. Atualizado para categoria Analytics
+            category: "Analytics",
             description: "Projeto de análise de dados educacionais utilizando SQL para identificar padrões de desempenho estudantil.",
             image: "/images/feature-work/projetosql.png",
             roles: ["SQL", "AWS", "Data Analysis", "ETL"],
             github_url: "https://github.com/micaellimaj/Analise-de-dados-SQL-Desempenho-estudantil",
             slides_url: "https://desempenho-estudantil-sql.my.canva.site/"
         },
+        
         {
             title: "Painel de BI para Instituição Financeira - Banvic",
             date: "Agosto de 2025",
@@ -77,6 +81,18 @@ const FeaturedWork = () => {
             github_url: "https://github.com/micaellimaj/Banvic-Data-Analytics",
             doc_url: "https://www.canva.com/design/DAGyVw_Dujw/spEMGroQSQcXudaAa-yJQg/view?utm_content=DAGyVw_Dujw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0ca5afcf9e",
             deploy_url: "https://bit.ly/Painel-Banvic"
+        },
+        {
+            title: "Painel Interativo de Perfil de Compra de Clientes",
+            date: "Julho de 2024",
+            // 4. Atualizado para categoria Analytics (Projeto Python/Streamlit)
+            category: "Analytics",
+            description: "O projeto consiste em uma plataforma de Business Intelligence desenvolvida com Python para otimizar a tomada de decisão estratégica. Utilizando uma base de 3.900 clientes, o sistema transforma dados brutos em insights acionáveis através de uma interface web dinâmica.",
+            image: "/images/feature-work/clotingstore.jpg",
+            roles: ["Python", "streamlit",  "Plotly", "Pandas", "Seaborn","Dashboard","Analytics"],
+            github_url: "https://github.com/micaellimaj/Projeto_Dev_Python",
+            doc_url: "https://docs.google.com/document/d/1K526rEqNuQDH4YWakC3uHZka4V30h2eSE8JZXEfyVB8/edit?usp=sharing",
+            deploy_url: "https://clothingstore.streamlit.app/"
         },
         {
             title: "Northwind — Integração & BI 360º",
@@ -121,7 +137,8 @@ const FeaturedWork = () => {
                         <div className="flex flex-col xs:flex-row gap-5 items-center justify-between">
                             <p className="text-sm tracking-[2px] text-primary uppercase font-medium">Projetos em Destaque</p>
                             <div className="flex gap-2">
-                                {["Todos", "Dev", "Power BI"].map((type) => (
+                                {/* 5. Adicionado "Analytics" ao mapeamento de botões */}
+                                {["Todos", "Dev", "Analytics", "Power BI"].map((type) => (
                                     <button
                                         key={type}
                                         onClick={() => setFilter(type)}
@@ -163,7 +180,6 @@ const FeaturedWork = () => {
                                         <div className="flex items-center justify-between">
                                             <h4 className="text-lg font-bold">{value.title}</h4>
                                             
-                                            {/* ÁREA DE LINKS DINÂMICOS */}
                                             <div className="flex gap-2">
                                                 {value.github_url && (
                                                     <a href={value.github_url} target="_blank" className="p-2 hover:bg-primary/5 rounded-full transition-colors" title="Ver Código">
