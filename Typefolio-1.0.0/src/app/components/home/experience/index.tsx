@@ -37,7 +37,7 @@ const Experience = () => {
             role: "Desenvolvedor Freelance Android/Full Stack",
             company: "CR Cursos",
             startYear: "Março de 2025",
-            endYear: "Março de 2026",
+            endYear: "Abril de 2026",
             location: "Toritama, PE (Remoto)",
             icon: "/images/experience/crcursos.svg",
             roles: ["Node.js", "React Native", "Expo", "Firebase", "Jest", "TypeScript"],
