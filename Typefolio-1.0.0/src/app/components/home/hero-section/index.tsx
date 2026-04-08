@@ -7,13 +7,18 @@ const HeroSection = () => {
     const socialIcon = [
         {
             img: "/images/hero-sec/linkedin.svg",
-            href: "https://www.linkedin.com/in/micael-lima-full-stack-software-engineer/",
+            href: "https://www.linkedin.com/in/micael-lima-data-analytics-ia-engineer/",
             icon: "LinkedIn"
         },
         {
             img: "/images/hero-sec/Github.svg",             
             href: "https://github.com/micaellimaj",
             icon: "GitHub"
+        },
+        {
+            img: "/images/hero-sec/gmail.svg", 
+            href: "mailto:micaeljose144@gmail.com",
+            icon: "Email"
         },
     ];
 
@@ -27,12 +32,11 @@ const HeroSection = () => {
                     <div className="border-x border-primary/10">
                         <div className="relative flex flex-col xs:flex-row items-center xs:items-start justify-center xs:justify-between max-w-3xl mx-auto gap-10 xs:gap-3 px-4 sm:px-7 pt-22 pb-8 sm:pb-12">
                             <div className="absolute top-0 transform -translate-y-1/2">
-                                {/* Substitua pela sua foto em public/images/hero-sec/micael.png */}
                                 <Image src={"/images/hero-sec/user-img.jpeg"} alt="Micael José de Lima" width={145} height={145} className="border-4 border-white rounded-full object-cover aspect-square" />
                                 <span className="absolute bottom-2.5 right-5 w-4 h-4 bg-green-500 border-2 border-white rounded-full" />
                             </div>
                             <div className="flex flex-col gap-2 sm:gap-3 items-center text-center xs:items-start">
-                                <h1 className="text-2xl sm:text-3xl font-bold">Micael José de Lima </h1>
+                                <h1 className="text-2xl sm:text-3xl font-bold">Micael Lima </h1>
                                 <p className="text-violet-700 font-medium">Developer, Data & IA</p>
                                 <div className="flex items-center gap-2">
                                     <Image src={"/images/icon/map-icon.svg"} alt="map-icon" width={20} height={20} />
@@ -44,33 +48,47 @@ const HeroSection = () => {
                                     {socialIcon?.map((value, index) => {
                                         return (
                                             <Link 
-                                                href={value?.href} 
+                                                href={value.href} 
                                                 key={index} 
                                                 target="_blank"
                                                 className="w-fit p-2.5 sm:p-3.5 hover:bg-primary/5 border border-primary/10 rounded-full transition-colors"
                                             >
-                                                <Image src={value?.img} alt={value?.icon} width={20} height={20} />
+                                                {/* Corrigido erro do ESLint removendo a asserção opcional perigosa */}
+                                                <Image src={value.img} alt={value.icon} width={20} height={20} />
                                             </Link>
                                         )
                                     })}
                                 </div>
-                                <Button asChild className="h-auto rounded-full p-0.5!">
-                                    <Link
-                                        href="https://docs.google.com/forms/d/e/1FAIpQLSc6fPmiaBSlZAsfBI3sYeYutgvSpi8nIAY2hqQVJjbX6KUX7Q/viewform"
-                                        target="_blank"
-                                        className="inline-block p-0.5 rounded-full bg-[linear-gradient(96.09deg,_#9282F8_12.17%,_#F3CA4D_90.71%)]"
+
+                                <div className="flex items-center gap-3">
+                                    {/* Botão de Download simplificado para não quebrar o layout */}
+                                    <a 
+                                        href="/doc/CvMicaelLimaDevData.pdf" 
+                                        download 
+                                        className="p-3 sm:p-4 hover:bg-primary/5 border border-primary/10 rounded-full transition-colors flex items-center justify-center"
+                                        title="Baixar Currículo"
                                     >
-                                        <span className="flex items-center gap-3 bg-primary hover:bg-transparent transition-all py-2.5 px-5 rounded-full">
-                                            <Image
-                                                src="/images/icon/spark-icon.svg"
-                                                alt="spark-icon"
-                                                width={14}
-                                                height={14}
-                                            />
-                                            <span className="text-sm sm:text-base font-semibold text-white">Vamos conversar?</span>
-                                        </span>
-                                    </Link>
-                                </Button>
+                                        <Image src="/images/hero-sec/resume.svg" alt="Download" width={20} height={20} />
+                                    </a>
+
+                                    <Button asChild className="h-auto rounded-full p-0.5!">
+                                        <Link
+                                            href="https://docs.google.com/forms/d/e/1FAIpQLSc6fPmiaBSlZAsfBI3sYeYutgvSpi8nIAY2hqQVJjbX6KUX7Q/viewform"
+                                            target="_blank"
+                                            className="inline-block p-0.5 rounded-full bg-[linear-gradient(96.09deg,_#9282F8_12.17%,_#F3CA4D_90.71%)]"
+                                        >
+                                            <span className="flex items-center gap-3 bg-primary hover:bg-transparent transition-all py-2.5 px-5 rounded-full">
+                                                <Image
+                                                    src="/images/icon/spark-icon.svg"
+                                                    alt="spark-icon"
+                                                    width={14}
+                                                    height={14}
+                                                />
+                                                <span className="text-sm sm:text-base font-semibold text-white">Vamos conversar?</span>
+                                            </span>
+                                        </Link>
+                                    </Button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -80,4 +98,4 @@ const HeroSection = () => {
     )
 }
 
-export default HeroSection
+export default HeroSection;
