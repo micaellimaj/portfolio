@@ -1,11 +1,12 @@
 "use client";
 import Image from "next/image";
-import { GraduationCap, Award, Calendar, CheckCircle2 } from "lucide-react";
+import { GraduationCap, Award, Calendar, CheckCircle2,  FileText } from "lucide-react";
 
 interface AcademicItem {
     date: string;
     title: string;
     institution: string;
+    academicHighlight?: string;
     logo: string;
     description: string;
     skills: string[];
@@ -23,6 +24,7 @@ const Education = () => {
             date: "Março de 2026 — Agosto de 2027",
             title: "Pós-graduação em Engenharia de Dados e IA",
             institution: "XP Educação",
+            academicHighlight: "Bolsista de Mérito: Conquistada via concurso de bolsas (80% de gratuidade)",
             logo: "/images/education/xperiun.png",
             description: "Especialização focada no ciclo de vida completo do dado, desde a ingestão até a implementação de modelos de IA.",
             skills: [
@@ -36,6 +38,7 @@ const Education = () => {
             date: "Fevereiro de 2023 — Dezembro de 2025",
             title: "Tecnólogo em Análise e Desenvolvimento de Sistemas",
             institution: "Unifavip Wyden",
+            academicHighlight: "Bolsista Integral (100% ProUni) por desempenho acadêmico",
             logo: "/images/education/wyden.png",
             description: "Graduação com foco prático no desenvolvimento de soluções escaláveis e arquitetura de sistemas.",
             skills: [
@@ -99,6 +102,16 @@ const Education = () => {
                                                 <p className="text-secondary font-medium mt-1">{item.institution}</p>
                                             </div>
                                         </div>
+
+                                        {/* NOVO: Destaque Acadêmico / Bolsa */}
+                                        {item.academicHighlight && (
+                                        <div className="flex items-center gap-2 pl-14 mt-3">
+                                            <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-tight backdrop-blur-sm">
+                                                <FileText size={12} className="text-primary" />
+                                                {item.academicHighlight}
+                                            </div>
+                                        </div>
+                                    )}
 
                                         {/* Descrição e Tópicos */}
                                         <div className="space-y-4 pt-4 border-t border-primary/5">
