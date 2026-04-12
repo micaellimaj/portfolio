@@ -10,8 +10,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Typefolio",
-  description: "Typefolio - Nextjs Templates",
+  title: "Micael Lima - Desenvolvedor de Software",
+  description: "Portfólio de Micael Lima, desenvolvedor de software especializado em desenvolvimento web, data e inteligência artificial. Explore projetos, experiência e habilidades técnicas.",
 };
 
 export default function RootLayout({
