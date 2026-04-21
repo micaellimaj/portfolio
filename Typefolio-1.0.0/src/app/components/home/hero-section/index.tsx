@@ -22,6 +22,11 @@ const HeroSection = () => {
         },
     ];
 
+    // Formatação do link do WhatsApp (Substitua o número pelo seu)
+    const whatsappNumber = "+5581992740734"; // Exemplo: 55 + DDD + Número
+    const whatsappMessage = encodeURIComponent("Olá Micael, vi seu portfólio e gostaria de conversar!");
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+
     return (
         <section>
             <div className="container">
@@ -53,7 +58,6 @@ const HeroSection = () => {
                                                 target="_blank"
                                                 className="w-fit p-2.5 sm:p-3.5 hover:bg-primary/5 border border-primary/10 rounded-full transition-colors"
                                             >
-                                                {/* Corrigido erro do ESLint removendo a asserção opcional perigosa */}
                                                 <Image src={value.img} alt={value.icon} width={20} height={20} />
                                             </Link>
                                         )
@@ -61,7 +65,6 @@ const HeroSection = () => {
                                 </div>
 
                                 <div className="flex items-center gap-3">
-                                    {/* Botão de Download simplificado para não quebrar o layout */}
                                     <a 
                                         href="/doc/CvMicaelLimaDevData.pdf" 
                                         download 
@@ -73,7 +76,7 @@ const HeroSection = () => {
 
                                     <Button asChild className="h-auto rounded-full p-0.5!">
                                         <Link
-                                            href="https://docs.google.com/forms/d/e/1FAIpQLSc6fPmiaBSlZAsfBI3sYeYutgvSpi8nIAY2hqQVJjbX6KUX7Q/viewform"
+                                            href={whatsappUrl}
                                             target="_blank"
                                             className="inline-block p-0.5 rounded-full bg-[linear-gradient(96.09deg,_#9282F8_12.17%,_#F3CA4D_90.71%)]"
                                         >
