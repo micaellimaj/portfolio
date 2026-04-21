@@ -1,13 +1,24 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image"
-import { Github, ExternalLink, ChevronDown, Presentation, FileText } from "lucide-react";
+import { Github, ExternalLink, ChevronDown, Presentation, FileText, Mic2 } from "lucide-react";
 
 const FeaturedWork = () => {
     // 1. Alterado para incluir "Analytics" nas opções de filtro
     const [filter, setFilter] = useState("Todos");
 
     const featureWork = [
+        {
+            title: "Desafio Mobile -  TodoList",
+            date: "Abril de 2026",
+            category: "Dev",
+            description: "A aplicação consiste em um app de Todo List, permitindo o gerenciamento completo de tarefas com persistência em nuvem através do Firebase. Desenvolvido com Expo Go, React Native e Tailwind CSS, o app oferece uma interface intuitiva para criação, edição e exclusão de tarefas, além de sincronização em tempo real entre dispositivos.",
+            image: "/images/feature-work/todolist3.png",
+            roles: ["Expo Go", "Firebase", "React", "Tailwind CSS", "Typescript","Nativewind","gluestack-ui","Mobile"],
+            github_url: "https://github.com/micaellimaj/App-Todo-List-React",
+            slides_url: "https://canva.link/u4n6hi4mjwg6z9e",
+            slides_url2: "https://canva.link/o8mem66nag5f6i2",
+        },
         {
             title: "Desafio Dev -  PetShop",
             date: "Fevereiro de 2026",
@@ -186,9 +197,17 @@ const FeaturedWork = () => {
                                                         <Github size={20} className="text-primary" />
                                                     </a>
                                                 )}
+                                                {/* Ícone 1: Apresentação Técnica */}
                                                 {value.slides_url && (
-                                                    <a href={value.slides_url} target="_blank" className="p-2 hover:bg-primary/5 rounded-full transition-colors" title="Apresentação">
+                                                    <a href={value.slides_url} target="_blank" className="p-2 hover:bg-primary/5 rounded-full transition-colors" title="Slides Técnicos">
                                                         <Presentation size={20} className="text-orange-600" />
+                                                    </a>
+                                                )}
+
+                                                {/* Ícone 2: Pitch (Microfone) */}
+                                                {value.slides_url2 && (
+                                                    <a href={value.slides_url2} target="_blank" className="p-2 hover:bg-primary/5 rounded-full transition-colors" title="Pitch (Apresentação de Negócio)">
+                                                        <Mic2 size={20} className="text-emerald-600" />
                                                     </a>
                                                 )}
                                                 {value.doc_url && (
