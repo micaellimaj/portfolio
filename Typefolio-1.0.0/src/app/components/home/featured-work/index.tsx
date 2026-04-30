@@ -8,6 +8,16 @@ const FeaturedWork = () => {
     const [filter, setFilter] = useState("Todos");
 
     const featureWork = [
+         {
+            title: "Pipeline de Inteligência Esportiva",
+            date: "Em Andamento",
+            category: "Analytics",
+            description: "Este projeto é uma solução de Engenharia de Dados e Observabilidade voltada ao mercado de apostas esportivas. A arquitetura vai além da simples coleta: ela implementa cálculos estatísticos para identificar Value Betting (Apostas de Valor) e possui um sistema de governança para monitorar a saúde da IA.",
+            image: "/images/feature-work/caramelo.png",
+            roles: ["n8n", "Supabase", "JavaScript", "OpenAI", "Sheets","Automatização","IA","API"],
+            github_url: "https://github.com/micaellimaj/Caramelo-das-Bets-Pipeline-de-Inteligencia-Esportiva",
+            slides_url: "https://gamma.app/docs/Pipeline-de-Inteligencia-Esportiva-387c3y1sifsjozj?mode=doc",
+        },
         {
             title: "Desafio Mobile -  TodoList",
             date: "Abril de 2026",
