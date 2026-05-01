@@ -66,7 +66,7 @@ const HeroSection = () => {
 
                                 <div className="flex items-center gap-3">
                                     <a 
-                                        href="/doc/CvMicaelLimaDevData.pdf" 
+                                        href="/doc/CvMicaelLima.pdf" 
                                         download 
                                         className="p-3 sm:p-4 hover:bg-primary/5 border border-primary/10 rounded-full transition-colors flex items-center justify-center"
                                         title="Baixar Currículo"
