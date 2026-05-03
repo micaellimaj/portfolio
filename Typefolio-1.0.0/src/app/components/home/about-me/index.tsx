@@ -25,7 +25,7 @@ const AboutMe = () => {
                         <div className="flex flex-col gap-4">
                             <p className="text-sm tracking-[2px] text-primary uppercase font-medium">Sobre Me</p>
                             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[32px]">
-                                Olá! Sou Micael — Desenvolvedor Full Stack e Analista de Dados baseado em Toritama. Atualmente, 
+                                Olá! Sou Micael —  Analista de Dados e Desenvolvedor baseado em Toritama. Atualmente, 
                                 <span className="bg-[linear-gradient(90deg,_rgba(243,202,77,0.4)_0%,_rgba(243,202,77,0.05)_100%)]"> foco minha expertise</span> na 
                                 <span className="border-b-2"> área de Desenvolvimento de Software e Engenharia de Dados</span>, com ênfase em ecossistemas de IA e inovação tecnológica.
                                 </h2>

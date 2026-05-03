@@ -10,8 +10,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Micael Lima - Desenvolvedor de Software",
-  description: "Portfólio de Micael Lima, desenvolvedor de software especializado em desenvolvimento web, data e inteligência artificial. Explore projetos, experiência e habilidades técnicas.",
+  title: "Micael Lima - Analista de Dados e Desenvolvedor",
+  description: "Portfólio de Micael Lima, analista de dados e desenvolvedor especializado em desenvolvimento web, data e inteligência artificial. Explore projetos, experiência e habilidades técnicas.",
 };
 
 export default function RootLayout({
