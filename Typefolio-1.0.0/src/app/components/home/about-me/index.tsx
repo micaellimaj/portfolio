@@ -30,7 +30,7 @@ const AboutMe = () => {
                                 <span className="border-b-2"> área de Desenvolvimento de Software e Engenharia de Dados</span>, com ênfase em ecossistemas de IA e inovação tecnológica.
                                 </h2>
                                                             <h5 className="text-secondary font-normal">
-                                Graduado em Análise e Desenvolvimento de Sistemas, com cursos e projetos na área de Tecnologia e pós-graduando em Engenharia de Dados e IA pela XP Educação.
+                                Graduado em Análise e Desenvolvimento de Sistemas, com cursos e projetos na área de Tecnologia e pós-graduando em Engenharia de Dados e IA pela XPeriun.
                             </h5>
                         </div>
                         <div className="flex flex-col gap-4">
