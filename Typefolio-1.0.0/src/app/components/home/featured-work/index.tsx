@@ -8,9 +8,19 @@ const FeaturedWork = () => {
     const [filter, setFilter] = useState("Todos");
 
     const featureWork = [
+        {
+            title: "Bússola Pública: Inteligência Legislativa",
+            date: "Em Andamento",
+            category: "Challenge",
+            description: "Pipeline automatizado de inteligência legislativa que consome dados da API da Câmara dos Deputados. O sistema utiliza IA Generativa para classificar proposições por tema via embeddings e gerar resumos executivos. A arquitetura inclui ingestão em Python, armazenamento no Supabase (PostgreSQL) e automação via n8n.",
+            image: "/images/feature-work/bussola-publica.png",
+            roles: ["Python", "Pandas", "PostgreSQL", "OpenAI API", "n8n", "Engenharia de Dados", "LLM"],
+            github_url: "https://github.com/micaellimaj/Bussola-Publica-Pipeline-de-Inteligencia-Legislativa-com-IA",
+    
+        },
          {
             title: "Pipeline de Inteligência Esportiva",
-            date: "Em Andamento",
+            date: "Maio de 2026",
             category: "Analytics",
             description: "Este projeto é uma solução de Engenharia de Dados e Observabilidade voltada ao mercado de apostas esportivas. A arquitetura vai além da simples coleta: ela implementa cálculos estatísticos para identificar Value Betting (Apostas de Valor) e possui um sistema de governança para monitorar a saúde da IA.",
             image: "/images/feature-work/caramelo.png",
@@ -157,21 +167,25 @@ const FeaturedWork = () => {
                     <div className="flex flex-col max-w-3xl mx-auto py-10 px-4 sm:px-7">
                         <div className="flex flex-col xs:flex-row gap-5 items-center justify-between">
                             <p className="text-sm tracking-[2px] text-primary uppercase font-medium">Projetos em Destaque</p>
-                            <div className="flex gap-2">
-                                {/* 5. Adicionado "Analytics" ao mapeamento de botões */}
-                                {["Todos", "Dev", "Analytics", "Power BI"].map((type) => (
-                                    <button
-                                        key={type}
-                                        onClick={() => setFilter(type)}
-                                        className={`px-4 py-1.5 rounded-full text-xs font-semibold transition-all border ${
-                                            filter === type 
-                                            ? "bg-primary text-white border-primary" 
-                                            : "bg-transparent text-primary border-primary/20 hover:border-primary"
-                                        }`}
-                                    >
-                                        {type}
-                                    </button>
-                                ))}
+                            <div className="flex flex-wrap justify-center gap-2">
+                                {/* Adicionado "Challenge" e lógica de estilo diferenciada */}
+                                {["Todos", "Dev", "Analytics", "Power BI", "Challenge"].map((type) => {
+                                    const isChallenge = type === "Challenge";
+                                    
+                                    return (
+                                        <button
+                                            key={type}
+                                            onClick={() => setFilter(type)}
+                                            className={`px-4 py-1.5 rounded-full text-xs font-semibold transition-all border ${
+                                                filter === type 
+                                                ? (isChallenge ? "bg-amber-500 text-white border-amber-500 shadow-lg shadow-amber-500/20" : "bg-primary text-white border-primary") 
+                                                : (isChallenge ? "bg-amber-50 text-amber-600 border-amber-200 hover:bg-amber-100" : "bg-transparent text-primary border-primary/20 hover:border-primary")
+                                            } ${isChallenge ? "ring-2 ring-amber-500/10 animate-pulse-slow" : ""}`}
+                                        >
+                                            {isChallenge ? ` ${type}` : type}
+                                        </button>
+                                       );
+                                })}
                             </div>
                         </div>
                     </div>
