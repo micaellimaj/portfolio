@@ -16,7 +16,24 @@ const FeaturedWork = () => {
             image: "/images/feature-work/bussola-publica.png",
             roles: ["Python", "Pandas", "PostgreSQL", "OpenAI API", "n8n", "Engenharia de Dados", "LLM"],
             github_url: "https://github.com/micaellimaj/Bussola-Publica-Pipeline-de-Inteligencia-Legislativa-com-IA",
-    
+            // Adicionado array de colaboradores para este projeto
+            collaborators: [
+                {
+                    name: "Heitor Graciani",
+                    github_url: "https://github.com/heitorgraciani",
+                    avatar_url: "https://avatars.githubusercontent.com/u/50665744?v=4" // Puxa a foto de perfil direto do GitHub
+                },
+                {
+                    name: "Marlon Vargas",
+                    github_url: "https://github.com/Mssvargas",
+                    avatar_url: "https://avatars.githubusercontent.com/u/168152902?v=4"
+                },
+                {
+                    name: "Guilherme Sobral",
+                    github_url: "https://github.com/Sobral-git",
+                    avatar_url: "https://avatars.githubusercontent.com/u/285694882?v=4"
+                }
+            ]
         },
          {
             title: "Pipeline de Inteligência Esportiva",
@@ -70,7 +87,6 @@ const FeaturedWork = () => {
         {
             title: "Análise e Predição de Dados - Preços de Imóveis em NY",
             date: "Março de 2025",
-            // 2. Atualizado para categoria Analytics
             category: "Analytics",
             description: "Projeto end-to-end de ciência de dados focado na análise do mercado imobiliário de Nova York.",
             image: "/images/feature-work/dadosNY.jpeg",
@@ -88,12 +104,18 @@ const FeaturedWork = () => {
             github_url: "https://github.com/micaellimaj/Caruaru_Saude",
             slides_url: "https://www.canva.com/design/DAGgWWMl8VQ/s2XDci1KxHqfEGas2QJ2KA/view?utm_content=DAGgWWMl8VQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4112aade7c",
             doc_url: "https://docs.google.com/document/d/1pEw4LYnfh1pbuMeG3k8QeFtqCxvXlz2MEeL4Mtqfztk/edit?tab=t.0",
-            deploy_url: "https://www.canva.com/design/DAGggzegzE4/Jk8OixOBUiCpbn08yUgKbw/view?utm_content=DAGggzegzE4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb22456d414"
+            deploy_url: "https://www.canva.com/design/DAGggzegzE4/Jk8OixOBUiCpbn08yUgKbw/view?utm_content=DAGggzegzE4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb22456d414",
+            collaborators: [
+                {
+                    name: "Lucas Vinicios",
+                    github_url: "https://github.com/Lucas-pypy",
+                    avatar_url: "https://avatars.githubusercontent.com/u/179267458?v=4" // Puxa a foto de perfil direto do GitHub
+                }
+            ]
         },
         {
             title: "Análise de Dados Com SQL - Desempenho Estudantil",
             date: "Julho de 2025",
-            // 3. Atualizado para categoria Analytics
             category: "Analytics",
             description: "Projeto de análise de dados educacionais utilizando SQL para identificar padrões de desempenho estudantil.",
             image: "/images/feature-work/projetosql.png",
@@ -101,7 +123,6 @@ const FeaturedWork = () => {
             github_url: "https://github.com/micaellimaj/Analise-de-dados-SQL-Desempenho-estudantil",
             slides_url: "https://desempenho-estudantil-sql.my.canva.site/"
         },
-        
         {
             title: "Painel de BI para Instituição Financeira - Banvic",
             date: "Agosto de 2025",
@@ -116,14 +137,25 @@ const FeaturedWork = () => {
         {
             title: "Painel Interativo de Perfil de Compra de Clientes",
             date: "Julho de 2024",
-            // 4. Atualizado para categoria Analytics (Projeto Python/Streamlit)
             category: "Analytics",
             description: "O projeto consiste em uma plataforma de Business Intelligence desenvolvida com Python para otimizar a tomada de decisão estratégica. Utilizando uma base de 3.900 clientes, o sistema transforma dados brutos em insights acionáveis através de uma interface web dinâmica.",
             image: "/images/feature-work/clotingstore.jpg",
             roles: ["Python", "streamlit",  "Plotly", "Pandas", "Seaborn","Dashboard","Analytics"],
             github_url: "https://github.com/micaellimaj/Projeto_Dev_Python",
             doc_url: "https://docs.google.com/document/d/1K526rEqNuQDH4YWakC3uHZka4V30h2eSE8JZXEfyVB8/edit?usp=sharing",
-            deploy_url: "https://clothingstore.streamlit.app/"
+            deploy_url: "https://clothingstore.streamlit.app/",
+            collaborators: [
+                {
+                    name: "Fernando Torres",
+                    github_url: "https://github.com/Fernalss",
+                    avatar_url: "https://avatars.githubusercontent.com/u/142063734?v=4" // Puxa a foto de perfil direto do GitHub
+                },
+                 {
+                    name: "Enrico Cassimiro",
+                    github_url: "https://github.com/EnricoCassimiro",
+                    avatar_url: "https://avatars.githubusercontent.com/u/155919496?v=4" // Puxa a foto de perfil direto do GitHub
+                }
+            ]
         },
         {
             title: "Northwind — Integração & BI 360º",
@@ -168,7 +200,6 @@ const FeaturedWork = () => {
                         <div className="flex flex-col xs:flex-row gap-5 items-center justify-between">
                             <p className="text-sm tracking-[2px] text-primary uppercase font-medium">Projetos em Destaque</p>
                             <div className="flex flex-wrap justify-center gap-2">
-                                {/* Adicionado "Challenge" e lógica de estilo diferenciada */}
                                 {["Todos", "Dev", "Analytics", "Power BI", "Challenge"].map((type) => {
                                     const isChallenge = type === "Challenge";
                                     
@@ -212,38 +243,63 @@ const FeaturedWork = () => {
                                     </div>
 
                                     <div className="flex flex-col gap-1 sm:gap-2 px-2">
-                                        <div className="flex items-center justify-between">
-                                            <h4 className="text-lg font-bold">{value.title}</h4>
+                                        <div className="flex items-center justify-between gap-2">
+                                            <h4 className="text-lg font-bold truncate">{value.title}</h4>
                                             
-                                            <div className="flex gap-2">
-                                                {value.github_url && (
-                                                    <a href={value.github_url} target="_blank" className="p-2 hover:bg-primary/5 rounded-full transition-colors" title="Ver Código">
-                                                        <Github size={20} className="text-primary" />
-                                                    </a>
-                                                )}
-                                                {/* Ícone 1: Apresentação Técnica */}
-                                                {value.slides_url && (
-                                                    <a href={value.slides_url} target="_blank" className="p-2 hover:bg-primary/5 rounded-full transition-colors" title="Slides Técnicos">
-                                                        <Presentation size={20} className="text-orange-600" />
-                                                    </a>
+                                            <div className="flex items-center gap-3 shrink-0">
+                                                {/* Seção de Colaboradores renderizada em linha */}
+                                                {value.collaborators && value.collaborators.length > 0 && (
+                                                    <div className="flex -space-x-2 overflow-hidden" title="Colaboradores do projeto">
+                                                        {value.collaborators.map((collab, cIdx) => (
+                                                            <a 
+                                                                key={cIdx} 
+                                                                href={collab.github_url} 
+                                                                target="_blank" 
+                                                                rel="noopener noreferrer"
+                                                                className="inline-block relative w-7 h-7 rounded-full ring-2 ring-white overflow-hidden transition-transform hover:scale-110 hover:z-10"
+                                                                title={collab.name}
+                                                            >
+                                                                <Image
+                                                                    src={collab.avatar_url}
+                                                                    alt={collab.name}
+                                                                    fill
+                                                                    className="object-cover"
+                                                                />
+                                                            </a>
+                                                        ))}
+                                                    </div>
                                                 )}
 
-                                                {/* Ícone 2: Pitch (Microfone) */}
-                                                {value.slides_url2 && (
-                                                    <a href={value.slides_url2} target="_blank" className="p-2 hover:bg-primary/5 rounded-full transition-colors" title="Pitch (Apresentação de Negócio)">
-                                                        <Mic2 size={20} className="text-emerald-600" />
-                                                    </a>
-                                                )}
-                                                {value.doc_url && (
-                                                    <a href={value.doc_url} target="_blank" className="p-2 hover:bg-primary/5 rounded-full transition-colors" title="Documentação">
-                                                        <FileText size={20} className="text-blue-600" />
-                                                    </a>
-                                                )}
-                                                {value.deploy_url && (
-                                                    <a href={value.deploy_url} target="_blank" className="p-2 hover:bg-primary/5 rounded-full transition-colors" title="Visualizar">
-                                                        <ExternalLink size={20} className="text-violet-700" />
-                                                    </a>
-                                                )}
+                                                <div className="flex gap-1 border-l pl-2 border-primary/10">
+                                                    {value.github_url && (
+                                                        <a href={value.github_url} target="_blank" className="p-2 hover:bg-primary/5 rounded-full transition-colors" title="Ver Código">
+                                                            <Github size={20} className="text-primary" />
+                                                        </a>
+                                                    )}
+                                                    {/* Ícone 1: Apresentação Técnica */}
+                                                    {value.slides_url && (
+                                                        <a href={value.slides_url} target="_blank" className="p-2 hover:bg-primary/5 rounded-full transition-colors" title="Slides Técnicos">
+                                                            <Presentation size={20} className="text-orange-600" />
+                                                        </a>
+                                                    )}
+
+                                                    {/* Ícone 2: Pitch (Microfone) */}
+                                                    {value.slides_url2 && (
+                                                        <a href={value.slides_url2} target="_blank" className="p-2 hover:bg-primary/5 rounded-full transition-colors" title="Pitch (Apresentação de Negócio)">
+                                                            <Mic2 size={20} className="text-emerald-600" />
+                                                        </a>
+                                                    )}
+                                                    {value.doc_url && (
+                                                        <a href={value.doc_url} target="_blank" className="p-2 hover:bg-primary/5 rounded-full transition-colors" title="Documentação">
+                                                            <FileText size={20} className="text-blue-600" />
+                                                        </a>
+                                                    )}
+                                                    {value.deploy_url && (
+                                                        <a href={value.deploy_url} target="_blank" className="p-2 hover:bg-primary/5 rounded-full transition-colors" title="Visualizar">
+                                                            <ExternalLink size={20} className="text-violet-700" />
+                                                        </a>
+                                                    )}
+                                                </div>
                                             </div>
                                         </div>
 
