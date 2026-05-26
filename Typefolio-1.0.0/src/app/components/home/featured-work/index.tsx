@@ -9,11 +9,11 @@ const FeaturedWork = () => {
 
     const featureWork = [
         {
-            title: "Bússola Pública: Inteligência Legislativa",
+            title: "Inteligência Legislativa com IA",
             date: "Em Andamento",
             category: "Challenge",
             description: "Pipeline automatizado de inteligência legislativa que consome dados da API da Câmara dos Deputados. O sistema utiliza IA Generativa para classificar proposições por tema via embeddings e gerar resumos executivos. A arquitetura inclui ingestão em Python, armazenamento no Supabase (PostgreSQL) e automação via n8n.",
-            image: "/images/feature-work/bussola-publica.png",
+            image: "/images/feature-work/LegoDados.png",
             roles: ["Python", "Pandas", "PostgreSQL", "OpenAI API", "n8n", "Engenharia de Dados", "LLM"],
             github_url: "https://github.com/micaellimaj/Bussola-Publica-Pipeline-de-Inteligencia-Legislativa-com-IA",
             // Adicionado array de colaboradores para este projeto

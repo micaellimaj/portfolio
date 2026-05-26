@@ -33,6 +33,72 @@ const Experience = () => {
 
     const experienceData: ExperienceItem[] = [
         {
+            id: "portal-stricto",
+            role: "Desenvolvedor de Soluções (MVP)",
+            company: "Portal Stricto / Parque TeC UFPE",
+            startYear: "Maio de 2026",
+            endYear: "Em Andamento",
+            location: "Caruaru, PE (Remoto)",
+            icon: "/images/experience/portalstricto.svg", 
+            roles: ["Concepção de Produto", "Modelagem de Negócios", "Requisitos Técnicos", "MVP", "Arquitetura de Dados"],
+            shortSummary: "Atuação na fase inicial de concepção e modelagem de negócios para uma plataforma unificada de busca de dados acadêmicos. Projeto selecionado e aprovado no programa de pré-incubação da UFPE, com foco atual no planejamento dos requisitos técnicos.",
+            fullDetails: {
+                situacao: "Projeto de plataforma acadêmica stricto sensu aprovado e selecionado para o programa de pré-incubação no Parque TeC da UFPE.",
+                tarefa: "Responsável pelo planejamento estratégico inicial, levantamento de requisitos de software e desenho da arquitetura da solução (MVP).",
+                acoes: [
+                    "Modelagem de Negócios: Estruturação da proposta de valor e mapeamento das necessidades de pesquisadores e estudantes.",
+                    "Engenharia de Requisitos: Levantamento de funcionalidades críticas e definição do escopo técnico para o desenvolvimento do MVP.",
+                    "Planejamento de Arquitetura: Estudo e escolha das tecnologias recentes e ecossistemas de nuvem ideais para a unificação da base de dados acadêmicos.",
+                    "Alinhamento de Incubação: Participação em mentorias e validações de mercado promovidas pelo polo tecnológico da UFPE."
+                ],
+                resultados: "Projeto aprovado com sucesso no ecossistema de inovação da UFPE e documentação técnica inicial estruturada para o início do desenvolvimento."
+            }
+        },
+        {
+            id: "cr-cursos-professor",
+            role: "Professor de Power BI (Em Preparação)",
+            company: "CR Cursos",
+            startYear: "Maio de 2026",
+            endYear: "Em Andamento",
+            location: "Toritama, PE",
+            icon: "/images/experience/crcursos.svg",
+            roles: ["Power BI", "Analytics", "SQL", "Educação", "Comunicação", "Banco de dados"],
+            shortSummary: "Atuação na criação do cronograma, apostilas e exercícios práticos de Power BI e SQL baseados em cenários reais de negócios. Experiência com observação de professores experientes, avaliação de TCCs e desenvolvimento de oficinas para eventos institucionais, aguardando formação de turmas.",
+            fullDetails: {
+                situacao: "Fase de planejamento pedagógico e estruturação técnica para abertura de novas turmas de tecnologia.",
+                tarefa: "Responsável pelo desenho do cronograma técnico e criação de bases de dados simuladas para as aulas práticas.",
+                acoes: [
+                    "Estruturação Pedagógica: Elaboração do cronograma cobrindo o ciclo de dados (Power Query, Star Schema, DAX e SQL).",
+                    "Desenvolvimento de Business Cases: Criação de dashboards práticos focados em cenários de Logística, Finanças e Operações.",
+                    "Shadowing e Avaliação: Acompanhamento de instrutores seniores em sala de aula e atuação como avaliador de TCCs.",
+                    "Atração de Alunos: Convidado para ministrar oficina prática de Power BI em evento institucional para captação de público."
+                ],
+                resultados: "Material didático e infraestrutura de dados 100% validados e prontos para o início das turmas regulares."
+            }
+        },
+        {
+            id: "cr-cursos-professor",
+            role: "Professor de Power BI (Em Preparação)",
+            company: "CR Cursos",
+            startYear: "Maio de 2026",
+            endYear: "Em Andamento",
+            location: "Toritama, PE",
+            icon: "/images/experience/crcursos.svg",
+            roles: ["Power BI", "Analytics", "SQL", "Educação", "Comunicação", "Banco de dados"],
+            shortSummary: "Atuação na criação do cronograma, apostilas e exercícios práticos de Power BI e SQL baseados em cenários reais de negócios. Experiência com observação de professores experientes, avaliação de TCCs e desenvolvimento de oficinas para eventos institucionais, aguardando formação de turmas.",
+            fullDetails: {
+                situacao: "Fase de planejamento pedagógico e estruturação técnica para abertura de novas turmas de tecnologia.",
+                tarefa: "Responsável pelo desenho do cronograma técnico e criação de bases de dados simuladas para as aulas práticas.",
+                acoes: [
+                    "Estruturação Pedagógica: Elaboração do cronograma cobrindo o ciclo de dados (Power Query, Star Schema, DAX e SQL).",
+                    "Desenvolvimento de Business Cases: Criação de dashboards práticos focados em cenários de Logística, Finanças e Operações.",
+                    "Shadowing e Avaliação: Acompanhamento de instrutores seniores em sala de aula e atuação como avaliador de TCCs.",
+                    "Atração de Alunos: Convidado para ministrar oficina prática de Power BI em evento institucional para captação de público."
+                ],
+                resultados: "Material didático e infraestrutura de dados 100% validados e prontos para o início das turmas regulares."
+            }
+        },
+        {
             id: "cr-cursos",
             role: "Desenvolvedor Freelance Android/Full Stack",
             company: "CR Cursos",
