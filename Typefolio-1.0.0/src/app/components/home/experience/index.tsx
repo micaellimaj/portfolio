@@ -77,28 +77,6 @@ const Experience = () => {
             }
         },
         {
-            id: "cr-cursos-professor",
-            role: "Professor de Power BI (Em Preparação)",
-            company: "CR Cursos",
-            startYear: "Maio de 2026",
-            endYear: "Em Andamento",
-            location: "Toritama, PE",
-            icon: "/images/experience/crcursos.svg",
-            roles: ["Power BI", "Analytics", "SQL", "Educação", "Comunicação", "Banco de dados"],
-            shortSummary: "Atuação na criação do cronograma, apostilas e exercícios práticos de Power BI e SQL baseados em cenários reais de negócios. Experiência com observação de professores experientes, avaliação de TCCs e desenvolvimento de oficinas para eventos institucionais, aguardando formação de turmas.",
-            fullDetails: {
-                situacao: "Fase de planejamento pedagógico e estruturação técnica para abertura de novas turmas de tecnologia.",
-                tarefa: "Responsável pelo desenho do cronograma técnico e criação de bases de dados simuladas para as aulas práticas.",
-                acoes: [
-                    "Estruturação Pedagógica: Elaboração do cronograma cobrindo o ciclo de dados (Power Query, Star Schema, DAX e SQL).",
-                    "Desenvolvimento de Business Cases: Criação de dashboards práticos focados em cenários de Logística, Finanças e Operações.",
-                    "Shadowing e Avaliação: Acompanhamento de instrutores seniores em sala de aula e atuação como avaliador de TCCs.",
-                    "Atração de Alunos: Convidado para ministrar oficina prática de Power BI em evento institucional para captação de público."
-                ],
-                resultados: "Material didático e infraestrutura de dados 100% validados e prontos para o início das turmas regulares."
-            }
-        },
-        {
             id: "cr-cursos",
             role: "Desenvolvedor Freelance Android/Full Stack",
             company: "CR Cursos",
