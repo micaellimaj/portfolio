@@ -46,26 +46,6 @@ const FeaturedWork = () => {
             slides_url: "https://gamma.app/docs/Pipeline-de-Inteligencia-Esportiva-387c3y1sifsjozj?mode=doc",
         },
         {
-            title: "Desafio Mobile -  TodoList",
-            date: "Abril de 2026",
-            category: "Dev",
-            description: "A aplicação consiste em um app de Todo List, permitindo o gerenciamento completo de tarefas com persistência em nuvem através do Firebase. Desenvolvido com Expo Go, React Native e Tailwind CSS, o app oferece uma interface intuitiva para criação, edição e exclusão de tarefas, além de sincronização em tempo real entre dispositivos.",
-            image: "/images/feature-work/todolist3.png",
-            roles: ["Expo Go", "Firebase", "React", "Tailwind CSS", "Typescript","Nativewind","gluestack-ui","Mobile"],
-            github_url: "https://github.com/micaellimaj/App-Todo-List-React",
-            slides_url: "https://canva.link/u4n6hi4mjwg6z9e",
-            slides_url2: "https://canva.link/o8mem66nag5f6i2",
-        },
-        {
-            title: "Desafio Dev -  PetShop",
-            date: "Fevereiro de 2026",
-            category: "Dev",
-            description: "API RESTful para gestão de pet shop, com funcionalidades de cadastro,  e controle de animais. Desenvolvida com NestJS, React e PostgreSQL.",
-            image: "/images/feature-work/petshop.png",
-            roles: ["NestJS", "API",  "React", "Tailwind CSS", "Typescript","prisma","Nextjs","postgreSQL","Docker"],
-            github_url: "https://github.com/micaellimaj/desafio-jr"
-        },
-        {
             title: "Climate Brain — IA & Monitoramento",
             date: "Dezembro de 2025",
             category: "Dev",
