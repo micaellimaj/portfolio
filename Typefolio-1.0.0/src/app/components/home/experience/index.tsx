@@ -32,6 +32,7 @@ const Experience = () => {
     const [expandedId, setExpandedId] = useState<string | null>(null);
 
     const experienceData: ExperienceItem[] = [
+        /*
         {
             id: "portal-stricto",
             role: "Desenvolvedor de Soluções (MVP)",
@@ -76,6 +77,7 @@ const Experience = () => {
                 resultados: "Material didático e infraestrutura de dados 100% validados e prontos para o início das turmas regulares."
             }
         },
+        */
         {
             id: "cr-cursos",
             role: "Desenvolvedor Freelance Android/Full Stack",
