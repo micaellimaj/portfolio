@@ -32,27 +32,26 @@ const Experience = () => {
     const [expandedId, setExpandedId] = useState<string | null>(null);
 
     const experienceData: ExperienceItem[] = [
-        /*
-        {
+      {
             id: "portal-stricto",
-            role: "Desenvolvedor de Soluções (MVP)",
+            role: "Desenvolvedor Backend (MVP)",
             company: "Portal Stricto / Parque TeC UFPE",
             startYear: "Maio de 2026",
             endYear: "Em Andamento",
             location: "Caruaru, PE (Remoto)",
             icon: "/images/experience/portalstricto.svg", 
-            roles: ["Concepção de Produto", "Modelagem de Negócios", "Requisitos Técnicos", "MVP", "Arquitetura de Dados"],
-            shortSummary: "Atuação na fase inicial de concepção e modelagem de negócios para uma plataforma unificada de busca de dados acadêmicos. Projeto selecionado e aprovado no programa de pré-incubação da UFPE, com foco atual no planejamento dos requisitos técnicos.",
+            roles: ["Desenvolvimento Backend", "Web Scraping", "Pipelines de ETL", "Arquitetura de Dados", "MVP"],
+            shortSummary: "Responsável pela arquitetura do backend e desenvolvimento de pipelines de web scraping e ETL para centralização de editais acadêmicos em projeto pré-incubado na UFPE. Implementação da API com Python (FastAPI) estruturada para futuras integrações com IA.",
             fullDetails: {
-                situacao: "Projeto de plataforma acadêmica stricto sensu aprovado e selecionado para o programa de pré-incubação no Parque TeC da UFPE.",
-                tarefa: "Responsável pelo planejamento estratégico inicial, levantamento de requisitos de software e desenho da arquitetura da solução (MVP).",
+                situacao: "Plataforma unificada para busca de editais acadêmicos stricto sensu, selecionada e aprovada para o programa de pré-incubação no Parque TeC da UFPE.",
+                tarefa: "Responsável pelo desenho da arquitetura técnica, modelagem do banco de dados e engenharia de dados para coleta automatizada de informações.",
                 acoes: [
-                    "Modelagem de Negócios: Estruturação da proposta de valor e mapeamento das necessidades de pesquisadores e estudantes.",
-                    "Engenharia de Requisitos: Levantamento de funcionalidades críticas e definição do escopo técnico para o desenvolvimento do MVP.",
-                    "Planejamento de Arquitetura: Estudo e escolha das tecnologias recentes e ecossistemas de nuvem ideais para a unificação da base de dados acadêmicos.",
-                    "Alinhamento de Incubação: Participação em mentorias e validações de mercado promovidas pelo polo tecnológico da UFPE."
+                    "Desenvolvimento Backend: Construção de uma API robusta, leve e assíncrona utilizando Python com o framework FastAPI e SQLModel.",
+                    "Engenharia de Dados & ETL: Criação de pipelines automatizados de web scraping para extração, limpeza (Pandas) e padronização de dados vindos de múltiplos portais universitários.",
+                    "Modelagem de Banco de Dados: Estruturação e gerenciamento da base de dados relacional utilizando PostgreSQL.",
+                    "Arquitetura Escalável: Planejamento técnico focado em extensibilidade, deixando o ecossistema pronto para receber futuras integrações com modelos de IA e ferramentas de automação."
                 ],
-                resultados: "Projeto aprovado com sucesso no ecossistema de inovação da UFPE e documentação técnica inicial estruturada para o início do desenvolvimento."
+                resultados: "Infraestrutura inicial do MVP e pipelines de coleta de dados estabelecidos com sucesso dentro do ecossistema de inovação da UFPE."
             }
         },
         {
@@ -77,7 +76,6 @@ const Experience = () => {
                 resultados: "Material didático e infraestrutura de dados 100% validados e prontos para o início das turmas regulares."
             }
         },
-        */
         {
             id: "cr-cursos",
             role: "Desenvolvedor Freelance Android/Full Stack",

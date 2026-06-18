@@ -10,13 +10,15 @@ const FeaturedWork = () => {
     const featureWork = [
         {
             title: "Inteligência Legislativa com IA",
-            date: "Em Andamento",
+            date: "Junho de 2026",
             category: "Challenge",
-            description: "Pipeline automatizado de inteligência legislativa que consome dados da API da Câmara dos Deputados. O sistema utiliza IA Generativa para classificar proposições por tema via embeddings e gerar resumos executivos. A arquitetura inclui ingestão em Python, armazenamento no Supabase (PostgreSQL) e automação via n8n.",
+            description: "Desenvolvimento de pipeline para monitoramento da API da Câmara dos Deputados, utilizando Python para ETL estruturado com persistência relacional no Supabase. Implementada camada de IA (OpenAI) para classificação temática via Embeddings, cálculo de similaridade e geração de resumos executivos. Fluxo orquestrado via n8n com entrega de digest diário e dashboard analítico integrado via Power BI.",
             image: "/images/feature-work/LegoDados.png",
-            roles: ["Python", "Pandas", "PostgreSQL", "OpenAI API", "n8n", "Engenharia de Dados", "LLM"],
+            roles: ["Python", "Pandas", "PostgreSQL", "OpenAI API", "n8n", "Engenharia de Dados", "LLM", "Power BI"],
             github_url: "https://github.com/micaellimaj/Bussola-Publica-Pipeline-de-Inteligencia-Legislativa-com-IA",
-            // Adicionado array de colaboradores para este projeto
+            deploy_url: "https://app.powerbi.com/view?r=eyJrIjoiMDQwMjE3NDQtMjExMi00MWExLWFhNTAtNWM3ODAyYzk5M2NlIiwidCI6IjUxZGQ3ZDM4LTYwNzctNDgzNy1hYTE0LWFlNDNmZThiM2ViMCJ9",
+            slides_url: "https://gamma.app/docs/SQUAD-LegoDados-s83lzb6w7v4a9kh",
+            slides_url2 : "https://canva.link/asl0640ohoj05h6",
             collaborators: [
                 {
                     name: "Heitor Graciani",
