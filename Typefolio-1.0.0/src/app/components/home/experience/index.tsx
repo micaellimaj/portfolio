@@ -87,6 +87,7 @@ const Experience = () => {
             roles: ["Node.js", "React Native", "Expo", "Firebase", "Jest", "TypeScript"],
             shortSummary: "Desenvolvimento de ecossistema educacional modular com Node.js, React Native e suite robusta de testes (QA).",
             projectLinks: [
+                { label: "Apresentação", url: "https://crcursos-app-apresentacao.netlify.app/", icon: <Globe size={12} /> },
                 { label: "Documentação", url: "https://docs.google.com/document/d/1Nd0ikyZJDA96FFro96SFDu_jHJm8G6StRQycPI-udqc/edit?tab=t.0", icon: <FileText size={12} /> }
             ],
             fullDetails: {
