@@ -51,9 +51,11 @@ const Education = () => {
     ];
 
     const certificateData: CertificateItem[] = [
-        { platform: "Xperiun", course: "Banco de Dados e Linguagem SQL", date: "Maio 2026" },
+        { platform: "Xperiun", course: "APIs e Integração de dados", date: "Julho 2026" },
+        { platform: "Xperiun", course: "Engenharia de Dados em Cloud", date: "Junho 2026" },
         { platform: "Xperiun", course: "Pandas para Análise Avançadas com Python", date: "Maio 2026" },
         { platform: "Xperiun", course: "IA Generativa Avançada para Engenharia de Dados", date: "Maio 2026" },
+        { platform: "Xperiun", course: "Banco de Dados e Linguagem SQL", date: "Maio 2026" },
         { platform: "Xperiun", course: "Automação Low-Code com n8n", date: "Maio 2026" },
         { platform: "DIO", course: "Back-end com Python", date: "Janeiro 2026" },
         { platform: "César School", course: "Formação da Pessoa Tutora", date: "Julho 2025" },

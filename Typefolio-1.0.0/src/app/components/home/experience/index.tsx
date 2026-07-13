@@ -32,6 +32,33 @@ const Experience = () => {
     const [expandedId, setExpandedId] = useState<string | null>(null);
 
     const experienceData: ExperienceItem[] = [
+        {
+    id: "marketplace-equipistas - Freelance",
+    role: "Desenvolvedor Full Stack",
+    company: "Marketplace Entre Equipistas",
+    startYear: "Maio de 2026",
+    endYear: "Julho de 2026",
+    location: "Caruaru, PE (Remoto)",
+    icon: "/images/experience/equipistas.svg", 
+    roles: ["Desenvolvimento Full Stack", "Clean Architecture", "Next.js", "Node.js", "Modelagem de Dados"],
+    shortSummary: "Desenvolvimento ponta a ponta de um marketplace privado e seguro para uma comunidade em Caruaru. Arquitetura robusta com Node.js, TypeScript e Clean Architecture no backend, integrada a uma interface web moderna em Next.js 14.",
+    projectLinks: [
+                { label: "Github - Backend", url: "https://github.com/micaellimaj/MarketPlace-Entre-Equipistas-Backend", icon: <Github size={12} /> },
+                 { label: "Github - Frontend", url: "https://github.com/micaellimaj/MarketPlace-Entre-Equipistas-frontend", icon: <Github size={12} /> },
+            ],
+    fullDetails: {
+        situacao: "Necessidade de um ecossistema digital exclusivo e seguro para a comunidade de equipistas de um grupo religioso gerenciar, anunciar e comercializar produtos com painéis de controle restritos por perfil.",
+        tarefa: "Responsável pelo design da arquitetura técnica backend, modelagem do banco de dados relacional, desenvolvimento da interface web responsiva e integração desacoplada dos serviços.",
+        acoes: [
+            "Arquitetura Backend & SOLID: Construção de uma API REST modular em Node.js e TypeScript utilizando os princípios de Clean Architecture e Use Cases para o isolamento completo das regras de negócio.",
+            "Persistência & Infraestrutura Cloud: Modelagem e gerenciamento do banco de dados relacional PostgreSQL via Prisma ORM com controle de histórico por Migrations e hospedagem no ecossistema Supabase.",
+            "Segurança & Moderação: Implementação de middlewares para validação de tokens JWT, proteção de endpoints sensíveis e criação de um módulo administrativo para controle e moderação de contas de usuários.",
+            "Interface Web Moderna: Desenvolvimento do front-end em Next.js 14 utilizando App Router para navegação otimizada, Tailwind CSS e Shadcn UI para componentes de interface fluidos e reutilizáveis.",
+            "Gerenciamento de Estado & Consumo de API: Centralização das chamadas HTTP em uma camada dedicada de Services com Axios e controle de estados globais via Context API para autenticação e feedbacks visuais."
+        ],
+        resultados: "Plataforma estável, segura e escalável entregue com sucesso, contando com tipagem estática de ponta a ponta e uma arquitetura resiliente preparada para futuras expansões sem acoplamento."
+    }
+},
       {
             id: "portal-stricto",
             role: "Desenvolvedor Backend (MVP) - Voluntário",
