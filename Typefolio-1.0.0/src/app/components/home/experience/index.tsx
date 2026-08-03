@@ -32,6 +32,29 @@ const Experience = () => {
     const [expandedId, setExpandedId] = useState<string | null>(null);
 
     const experienceData: ExperienceItem[] = [
+
+        {
+        id: "portal-stricto",
+        role: "Desenvolvedor Backend (MVP) - Voluntário",
+        company: "Portal Stricto",
+        startYear: "Maio de 2026",
+        endYear: "Em Andamento",
+        location: "Caruaru, PE (Remoto)",
+        icon: "/images/experience/portalstricto.svg", 
+        roles: ["Desenvolvimento Backend", "Web Scraping", "Pipelines de ETL", "Arquitetura de Dados", "MVP"],
+        shortSummary: "Responsável pela arquitetura do backend e desenvolvimento de pipelines de web scraping e ETL para agregação e tratamento de dados públicos. Implementação de API assíncrona com Python (FastAPI) estruturada para futuras integrações com IA.",
+        fullDetails: {
+            situacao: "Desenvolvimento do MVP de uma plataforma centralizada para agregação, estruturação e processamento automatizado de dados públicos.",
+            tarefa: "Responsável pelo desenho da arquitetura técnica do ecossistema, modelagem do banco de dados e engenharia de dados para coleta automatizada de informações.",
+            acoes: [
+                "Desenvolvimento Backend: Construção de uma API assíncrona, leve e de alto desempenho utilizando Python com o framework FastAPI.",
+                "Engenharia de Dados (ETL): Criação de pipelines automatizados de web scraping para extração, limpeza (Pandas) e padronização de dados brutos vindos de múltiplas fontes.",
+                "Modelagem de Dados: Estruturação e gerenciamento da base de dados relacional utilizando PostgreSQL e SQLModel.",
+                "Arquitetura Escalável: Planejamento técnico focado em extensibilidade, deixando o ecossistema pronto para receber futuras integrações com modelos de Inteligência Artificial e sistemas de automação."
+            ],
+            resultados: "Infraestrutura inicial do MVP e pipelines de ingestão de dados consolidados com sucesso."
+        }
+    },
         {
     id: "marketplace-equipistas - Freelance",
     role: "Desenvolvedor Full Stack",
@@ -59,28 +82,7 @@ const Experience = () => {
         resultados: "Plataforma estável, segura e escalável entregue com sucesso, contando com tipagem estática de ponta a ponta e uma arquitetura resiliente preparada para futuras expansões sem acoplamento."
     }
 },
-      {
-            id: "portal-stricto",
-            role: "Desenvolvedor Backend (MVP) - Voluntário",
-            company: "Portal Stricto / Parque TeC UFPE",
-            startYear: "Maio de 2026",
-            endYear: "Em Andamento",
-            location: "Caruaru, PE (Remoto)",
-            icon: "/images/experience/portalstricto.svg", 
-            roles: ["Desenvolvimento Backend", "Web Scraping", "Pipelines de ETL", "Arquitetura de Dados", "MVP"],
-            shortSummary: "Responsável pela arquitetura do backend e desenvolvimento de pipelines de web scraping e ETL para centralização de editais acadêmicos em projeto pré-incubado na UFPE. Implementação da API com Python (FastAPI) estruturada para futuras integrações com IA.",
-            fullDetails: {
-                situacao: "Plataforma unificada para busca de editais acadêmicos stricto sensu, selecionada e aprovada para o programa de pré-incubação no Parque TeC da UFPE.",
-                tarefa: "Responsável pelo desenho da arquitetura técnica, modelagem do banco de dados e engenharia de dados para coleta automatizada de informações.",
-                acoes: [
-                    "Desenvolvimento Backend: Construção de uma API robusta, leve e assíncrona utilizando Python com o framework FastAPI e SQLModel.",
-                    "Engenharia de Dados & ETL: Criação de pipelines automatizados de web scraping para extração, limpeza (Pandas) e padronização de dados vindos de múltiplos portais universitários.",
-                    "Modelagem de Banco de Dados: Estruturação e gerenciamento da base de dados relacional utilizando PostgreSQL.",
-                    "Arquitetura Escalável: Planejamento técnico focado em extensibilidade, deixando o ecossistema pronto para receber futuras integrações com modelos de IA e ferramentas de automação."
-                ],
-                resultados: "Infraestrutura inicial do MVP e pipelines de coleta de dados estabelecidos com sucesso dentro do ecossistema de inovação da UFPE."
-            }
-        },
+
         {
             id: "cr-cursos",
             role: "Desenvolvedor Freelance Android/Full Stack",
