@@ -1,10 +1,9 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image"
+import Image from "next/image";
 import { Github, ExternalLink, ChevronDown, Presentation, FileText, Mic2 } from "lucide-react";
 
 const FeaturedWork = () => {
-    // 1. Alterado para incluir "Analytics" nas opções de filtro
     const [filter, setFilter] = useState("Todos");
 
     const featureWork = [
@@ -18,12 +17,12 @@ const FeaturedWork = () => {
             github_url: "https://github.com/micaellimaj/Bussola-Publica-Pipeline-de-Inteligencia-Legislativa-com-IA",
             deploy_url: "https://app.powerbi.com/view?r=eyJrIjoiMDQwMjE3NDQtMjExMi00MWExLWFhNTAtNWM3ODAyYzk5M2NlIiwidCI6IjUxZGQ3ZDM4LTYwNzctNDgzNy1hYTE0LWFlNDNmZThiM2ViMCJ9",
             slides_url: "https://gamma.app/docs/SQUAD-LegoDados-s83lzb6w7v4a9kh",
-            slides_url2 : "https://canva.link/asl0640ohoj05h6",
+            slides_url2: "https://canva.link/asl0640ohoj05h6",
             collaborators: [
                 {
                     name: "Heitor Graciani",
                     github_url: "https://github.com/heitorgraciani",
-                    avatar_url: "https://avatars.githubusercontent.com/u/50665744?v=4" // Puxa a foto de perfil direto do GitHub
+                    avatar_url: "https://avatars.githubusercontent.com/u/50665744?v=4"
                 },
                 {
                     name: "Marlon Vargas",
@@ -43,10 +42,10 @@ const FeaturedWork = () => {
             category: "Dev",
             description: "Sistema full-stack para monitoramento climático em tempo real. Utiliza NestJS para a API, Go para processamento de alto desempenho, React para interface de usuário e Python com Gemini API para análise preditiva de dados meteorológicos.",
             image: "/images/feature-work/climatebrain.png",
-            roles: ["NestJS", "Go", "Python", "Gemini API", "React","Redis","pipeline de dados"],
+            roles: ["NestJS", "Go", "Python", "Gemini API", "React", "Redis", "pipeline de dados"],
             github_url: "https://github.com/micaellimaj/desafio-gdash-2025-02/tree/main"
         },
-         {
+        {
             title: "Desafio Back-End - Mario Maker API",
             date: "Maio de 2025",
             category: "Dev",
@@ -81,7 +80,7 @@ const FeaturedWork = () => {
                 {
                     name: "Lucas Vinicios",
                     github_url: "https://github.com/Lucas-pypy",
-                    avatar_url: "https://avatars.githubusercontent.com/u/179267458?v=4" // Puxa a foto de perfil direto do GitHub
+                    avatar_url: "https://avatars.githubusercontent.com/u/179267458?v=4"
                 }
             ]
         },
@@ -100,7 +99,7 @@ const FeaturedWork = () => {
             date: "Agosto de 2025",
             category: "Power BI",
             description: "Projeto de modernização analítica focado na transição de uma cultura de dados para uma gestão estratégica.",
-            image: "/images/feature-work/banvic.png", 
+            image: "/images/feature-work/banvic.png",
             roles: ["DAX", "Power BI", "KPIs", "Data Modeling"],
             github_url: "https://github.com/micaellimaj/Banvic-Data-Analytics",
             doc_url: "https://www.canva.com/design/DAGyVw_Dujw/spEMGroQSQcXudaAa-yJQg/view?utm_content=DAGyVw_Dujw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0ca5afcf9e",
@@ -112,7 +111,7 @@ const FeaturedWork = () => {
             category: "Analytics",
             description: "O projeto consiste em uma plataforma de Business Intelligence desenvolvida com Python para otimizar a tomada de decisão estratégica. Utilizando uma base de 3.900 clientes, o sistema transforma dados brutos em insights acionáveis através de uma interface web dinâmica.",
             image: "/images/feature-work/clotingstore.jpg",
-            roles: ["Python", "streamlit",  "Plotly", "Pandas", "Seaborn","Dashboard","Analytics"],
+            roles: ["Python", "streamlit", "Plotly", "Pandas", "Seaborn", "Dashboard", "Analytics"],
             github_url: "https://github.com/micaellimaj/Projeto_Dev_Python",
             doc_url: "https://docs.google.com/document/d/1K526rEqNuQDH4YWakC3uHZka4V30h2eSE8JZXEfyVB8/edit?usp=sharing",
             deploy_url: "https://clothingstore.streamlit.app/",
@@ -120,12 +119,12 @@ const FeaturedWork = () => {
                 {
                     name: "Fernando Torres",
                     github_url: "https://github.com/Fernalss",
-                    avatar_url: "https://avatars.githubusercontent.com/u/142063734?v=4" // Puxa a foto de perfil direto do GitHub
+                    avatar_url: "https://avatars.githubusercontent.com/u/142063734?v=4"
                 },
-                 {
+                {
                     name: "Enrico Cassimiro",
                     github_url: "https://github.com/EnricoCassimiro",
-                    avatar_url: "https://avatars.githubusercontent.com/u/155919496?v=4" // Puxa a foto de perfil direto do GitHub
+                    avatar_url: "https://avatars.githubusercontent.com/u/155919496?v=4"
                 }
             ]
         },
@@ -134,7 +133,7 @@ const FeaturedWork = () => {
             date: "Julho de 2024",
             category: "Power BI",
             description: "Modernização analítica unificando 14 tabelas de dados via Python/Jupyter e Power BI.",
-            image: "/images/feature-work/north.png", 
+            image: "/images/feature-work/north.png",
             roles: ["Power BI", "Python", "Jupyter", "ETL"],
             github_url: "https://github.com/micaellimaj/Northwind-Traders",
             doc_url: "https://docs.google.com/document/d/14KwQmesLRATb4_sY0ay5mzLYv6AqGHPqVG4Fnl7aMP4/edit?tab=t.0",
@@ -145,7 +144,7 @@ const FeaturedWork = () => {
             date: "Indeterminado",
             category: "Power BI",
             description: "Dashboard financeiro interativo para redes de varejo. Inclui análise de receita por cidade via mapas de calor, segmentação avançada de clientes, monitoramento de impostos e performance por linha de produtos com navegação multipáginas.",
-            image: "/images/feature-work/filial.png", 
+            image: "/images/feature-work/filial.png",
             roles: ["Power BI", "DAX", "Financial Analysis", "UX Design"],
             deploy_url: "https://bit.ly/Micael-Lima-Analista-de-dados-Relatorio-supermercados"
         },
@@ -154,14 +153,14 @@ const FeaturedWork = () => {
             date: "Indeterminado",
             category: "Power BI",
             description: "Estudo do impacto do álcool no desempenho acadêmico. Desafio superado na visualização de dados majoritariamente categóricos, criando correlações entre hábitos de consumo, notas e vida familiar com filtros dinâmicos por escola e gênero.",
-            image: "/images/feature-work/escola.png", 
+            image: "/images/feature-work/escola.png",
             roles: ["Power BI", "Data Analytics", "Categorial Data", "Social Insights"],
             deploy_url: "https://app.powerbi.com/view?r=eyJrIjoiNjhkMGNlYmQtNmRkMi00MTJhLTliZDMtYTRhZGEzZGNlNWJlIiwidCI6IjUxZGQ3ZDM4LTYwNzctNDgzNy1hYTE0LWFlNDNmZThiM2ViMCJ9"
         },
     ];
 
-    const filteredProjects = filter === "Todos" 
-        ? featureWork 
+    const filteredProjects = filter === "Todos"
+        ? featureWork
         : featureWork.filter(project => project.category === filter);
 
     return (
@@ -171,28 +170,33 @@ const FeaturedWork = () => {
                     <div className="flex flex-col max-w-3xl mx-auto py-10 px-4 sm:px-7">
                         <div className="flex flex-col xs:flex-row gap-5 items-center justify-between">
                             <p className="text-sm tracking-[2px] text-primary uppercase font-medium">Projetos em Destaque</p>
+                            
                             <div className="flex flex-wrap justify-center gap-2">
                                 {["Todos", "Dev", "Analytics", "Power BI", "Challenge"].map((type) => {
                                     const isChallenge = type === "Challenge";
-                                    
+
                                     return (
                                         <button
                                             key={type}
                                             onClick={() => setFilter(type)}
                                             className={`px-4 py-1.5 rounded-full text-xs font-semibold transition-all border ${
-                                                filter === type 
-                                                ? (isChallenge ? "bg-amber-500 text-white border-amber-500 shadow-lg shadow-amber-500/20" : "bg-primary text-white border-primary") 
-                                                : (isChallenge ? "bg-amber-50 text-amber-600 border-amber-200 hover:bg-amber-100" : "bg-transparent text-primary border-primary/20 hover:border-primary")
+                                                filter === type
+                                                    ? (isChallenge 
+                                                        ? "bg-amber-500 text-white border-amber-500 shadow-lg shadow-amber-500/20" 
+                                                        : "bg-primary text-primary-foreground border-primary shadow-sm")
+                                                    : (isChallenge 
+                                                        ? "bg-amber-500/10 text-amber-500 border-amber-500/30 hover:bg-amber-500/20" 
+                                                        : "bg-transparent text-muted-foreground border-primary/20 hover:border-primary hover:text-primary")
                                             } ${isChallenge ? "ring-2 ring-amber-500/10 animate-pulse-slow" : ""}`}
                                         >
                                             {isChallenge ? ` ${type}` : type}
                                         </button>
-                                       );
+                                    );
                                 })}
                             </div>
                         </div>
                     </div>
-                    
+
                     <div className="grid grid-cols-1 md:grid-cols-2 border-t border-primary/10">
                         {filteredProjects.map((value, index) => {
                             const isRightCol = index % 2 === 1;
@@ -202,33 +206,38 @@ const FeaturedWork = () => {
                                     key={index}
                                     className={`group flex flex-col gap-3.5 sm:gap-5 p-3.5 sm:p-6 border-b border-primary/10 ${isRightCol ? 'md:border-l' : ''}`}
                                 >
-                                    <div className="overflow-hidden rounded-xl border border-primary/5 aspect-video relative">
+                                    <div className="overflow-hidden rounded-xl border border-primary/10 aspect-video relative">
                                         <Image
                                             src={value.image}
                                             alt={value.title}
                                             fill
                                             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 ease-in-out"
                                         />
-                                        <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-bold text-primary shadow-sm">
-                                            {value.date}
+                                        
+                                        <div className="absolute top-3 right-3 p-[1px] rounded transition-all duration-300 hover:bg-[linear-gradient(96.09deg,_#9282F8_12.17%,_#F3CA4D_90.71%)] hover:scale-105 shadow-md">
+                                            <div className="bg-card/90 backdrop-blur-md px-2.5 py-1 rounded text-[10px] font-bold text-primary border border-primary/10">
+                                                {value.date}
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <div className="flex flex-col gap-1 sm:gap-2 px-2">
-                                        <div className="flex items-center justify-between gap-2">
-                                            <h4 className="text-lg font-bold truncate">{value.title}</h4>
-                                            
-                                            <div className="flex items-center gap-3 shrink-0">
-                                                {/* Seção de Colaboradores renderizada em linha */}
+                                    <div className="flex flex-col gap-2 px-1">
+                                        <div className="flex items-start justify-between gap-3">
+                                            {/* Título configurado com quebra de linha */}
+                                            <h4 className="text-lg font-bold text-foreground leading-snug break-words">
+                                                {value.title}
+                                            </h4>
+
+                                            <div className="flex items-center gap-3 shrink-0 pt-0.5">
                                                 {value.collaborators && value.collaborators.length > 0 && (
                                                     <div className="flex -space-x-2 overflow-hidden" title="Colaboradores do projeto">
                                                         {value.collaborators.map((collab, cIdx) => (
-                                                            <a 
-                                                                key={cIdx} 
-                                                                href={collab.github_url} 
-                                                                target="_blank" 
+                                                            <a
+                                                                key={cIdx}
+                                                                href={collab.github_url}
+                                                                target="_blank"
                                                                 rel="noopener noreferrer"
-                                                                className="inline-block relative w-7 h-7 rounded-full ring-2 ring-white overflow-hidden transition-transform hover:scale-110 hover:z-10"
+                                                                className="inline-block relative w-7 h-7 rounded-full ring-2 ring-background overflow-hidden transition-transform hover:scale-110 hover:z-10"
                                                                 title={collab.name}
                                                             >
                                                                 <Image
@@ -244,48 +253,54 @@ const FeaturedWork = () => {
 
                                                 <div className="flex gap-1 border-l pl-2 border-primary/10">
                                                     {value.github_url && (
-                                                        <a href={value.github_url} target="_blank" className="p-2 hover:bg-primary/5 rounded-full transition-colors" title="Ver Código">
-                                                            <Github size={20} className="text-primary" />
+                                                        <a href={value.github_url} target="_blank" rel="noopener noreferrer" className="p-1.5 hover:bg-primary/10 rounded-full transition-colors" title="Ver Código">
+                                                            <Github size={18} className="text-foreground/80 hover:text-primary transition-colors" />
                                                         </a>
                                                     )}
-                                                    {/* Ícone 1: Apresentação Técnica */}
                                                     {value.slides_url && (
-                                                        <a href={value.slides_url} target="_blank" className="p-2 hover:bg-primary/5 rounded-full transition-colors" title="Slides Técnicos">
-                                                            <Presentation size={20} className="text-orange-600" />
+                                                        <a href={value.slides_url} target="_blank" rel="noopener noreferrer" className="p-1.5 hover:bg-primary/10 rounded-full transition-colors" title="Slides Técnicos">
+                                                            <Presentation size={18} className="text-amber-500 hover:text-amber-400 transition-colors" />
                                                         </a>
                                                     )}
-
-                                                    {/* Ícone 2: Pitch (Microfone) */}
                                                     {value.slides_url2 && (
-                                                        <a href={value.slides_url2} target="_blank" className="p-2 hover:bg-primary/5 rounded-full transition-colors" title="Pitch (Apresentação de Negócio)">
-                                                            <Mic2 size={20} className="text-emerald-600" />
+                                                        <a href={value.slides_url2} target="_blank" rel="noopener noreferrer" className="p-1.5 hover:bg-primary/10 rounded-full transition-colors" title="Pitch (Apresentação de Negócio)">
+                                                            <Mic2 size={18} className="text-emerald-500 hover:text-emerald-400 transition-colors" />
                                                         </a>
                                                     )}
                                                     {value.doc_url && (
-                                                        <a href={value.doc_url} target="_blank" className="p-2 hover:bg-primary/5 rounded-full transition-colors" title="Documentação">
-                                                            <FileText size={20} className="text-blue-600" />
+                                                        <a href={value.doc_url} target="_blank" rel="noopener noreferrer" className="p-1.5 hover:bg-primary/10 rounded-full transition-colors" title="Documentação">
+                                                            <FileText size={18} className="text-blue-500 hover:text-blue-400 transition-colors" />
                                                         </a>
                                                     )}
                                                     {value.deploy_url && (
-                                                        <a href={value.deploy_url} target="_blank" className="p-2 hover:bg-primary/5 rounded-full transition-colors" title="Visualizar">
-                                                            <ExternalLink size={20} className="text-violet-700" />
+                                                        <a href={value.deploy_url} target="_blank" rel="noopener noreferrer" className="p-1.5 hover:bg-primary/10 rounded-full transition-colors" title="Visualizar">
+                                                            <ExternalLink size={18} className="text-violet-500 hover:text-violet-400 transition-colors" />
                                                         </a>
                                                     )}
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <p className="text-sm text-secondary font-medium mb-2">
-                                            {value.roles.join(' • ')}
-                                        </p>
+                                        <div className="flex flex-wrap gap-1.5 my-1">
+                                            {value.roles.map((tech, idx) => (
+                                                <div
+                                                    key={idx}
+                                                    className="p-[1px] rounded-md transition-all duration-300 hover:bg-[linear-gradient(96.09deg,_#9282F8_12.17%,_#F3CA4D_90.71%)] hover:scale-[1.05]"
+                                                >
+                                                    <span className="block px-2 py-0.5 rounded-[5px] text-[10px] font-semibold uppercase tracking-wide bg-card border border-primary/10 text-primary transition-colors">
+                                                        {tech}
+                                                    </span>
+                                                </div>
+                                            ))}
+                                        </div>
 
-                                        <details className="group/details">
-                                            <summary className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-primary cursor-pointer list-none hover:opacity-70 transition-opacity">
+                                        <details className="group/details mt-1">
+                                            <summary className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-primary cursor-pointer list-none hover:opacity-80 transition-opacity">
                                                 <span>Ver detalhes do projeto</span>
                                                 <ChevronDown size={14} className="group-open/details:rotate-180 transition-transform" />
                                             </summary>
-                                            <div className="mt-3 p-4 bg-primary/[0.03] border border-primary/5 rounded-lg">
-                                                <p className="text-sm text-secondary leading-relaxed">
+                                            <div className="mt-3 p-4 bg-primary/[0.03] dark:bg-primary/[0.05] border border-primary/10 rounded-lg">
+                                                <p className="text-sm text-muted-foreground leading-relaxed">
                                                     {value.description}
                                                 </p>
                                             </div>
@@ -298,7 +313,7 @@ const FeaturedWork = () => {
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
 export default FeaturedWork;

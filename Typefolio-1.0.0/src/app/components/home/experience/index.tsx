@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image"
+import Image from "next/image";
 import { Github, FileText, Globe, ChevronDown, Rocket, Target, Wrench, Award, PlayCircle } from "lucide-react";
 
 interface ProjectLink {
@@ -17,7 +17,7 @@ interface ExperienceItem {
     endYear: string;
     location: string;
     icon: string;
-    roles: string[]; // Nova adição
+    roles: string[];
     projectLinks?: ProjectLink[];
     shortSummary: string;
     fullDetails: {
@@ -32,57 +32,55 @@ const Experience = () => {
     const [expandedId, setExpandedId] = useState<string | null>(null);
 
     const experienceData: ExperienceItem[] = [
-
         {
-        id: "portal-stricto",
-        role: "Desenvolvedor Backend (MVP) - Voluntário",
-        company: "Portal Stricto",
-        startYear: "Maio de 2026",
-        endYear: "Em Andamento",
-        location: "Caruaru, PE (Remoto)",
-        icon: "/images/experience/portalstricto.svg", 
-        roles: ["Desenvolvimento Backend", "Web Scraping", "Pipelines de ETL", "Arquitetura de Dados", "MVP"],
-        shortSummary: "Responsável pela arquitetura do backend e desenvolvimento de pipelines de web scraping e ETL para agregação e tratamento de dados públicos. Implementação de API assíncrona com Python (FastAPI) estruturada para futuras integrações com IA.",
-        fullDetails: {
-            situacao: "Desenvolvimento do MVP de uma plataforma centralizada para agregação, estruturação e processamento automatizado de dados públicos.",
-            tarefa: "Responsável pelo desenho da arquitetura técnica do ecossistema, modelagem do banco de dados e engenharia de dados para coleta automatizada de informações.",
-            acoes: [
-                "Desenvolvimento Backend: Construção de uma API assíncrona, leve e de alto desempenho utilizando Python com o framework FastAPI.",
-                "Engenharia de Dados (ETL): Criação de pipelines automatizados de web scraping para extração, limpeza (Pandas) e padronização de dados brutos vindos de múltiplas fontes.",
-                "Modelagem de Dados: Estruturação e gerenciamento da base de dados relacional utilizando PostgreSQL e SQLModel.",
-                "Arquitetura Escalável: Planejamento técnico focado em extensibilidade, deixando o ecossistema pronto para receber futuras integrações com modelos de Inteligência Artificial e sistemas de automação."
-            ],
-            resultados: "Infraestrutura inicial do MVP e pipelines de ingestão de dados consolidados com sucesso."
-        }
-    },
+            id: "portal-stricto",
+            role: "Desenvolvedor Backend (MVP) - Voluntário",
+            company: "Portal Stricto",
+            startYear: "Maio de 2026",
+            endYear: "Em Andamento",
+            location: "Caruaru, PE (Remoto)",
+            icon: "/images/experience/portalstricto.svg", 
+            roles: ["Desenvolvimento Backend", "Web Scraping", "Pipelines de ETL", "Arquitetura de Dados", "MVP"],
+            shortSummary: "Responsável pela arquitetura do backend e desenvolvimento de pipelines de web scraping e ETL para agregação e tratamento de dados públicos. Implementação de API assíncrona com Python (FastAPI) estruturada para futuras integrações com IA.",
+            fullDetails: {
+                situacao: "Desenvolvimento do MVP de uma plataforma centralizada para agregação, estruturação e processamento automatizado de dados públicos.",
+                tarefa: "Responsável pelo desenho da arquitetura técnica do ecossistema, modelagem do banco de dados e engenharia de dados para coleta automatizada de informações.",
+                acoes: [
+                    "Desenvolvimento Backend: Construção de uma API assíncrona, leve e de alto desempenho utilizando Python com o framework FastAPI.",
+                    "Engenharia de Dados (ETL): Criação de pipelines automatizados de web scraping para extração, limpeza (Pandas) e padronização de dados brutos vindos de múltiplas fontes.",
+                    "Modelagem de Dados: Estruturação e gerenciamento da base de dados relacional utilizando PostgreSQL e SQLModel.",
+                    "Arquitetura Escalável: Planejamento técnico focado em extensibilidade, deixando o ecossistema pronto para receber futuras integrações com modelos de Inteligência Artificial e sistemas de automação."
+                ],
+                resultados: "Infraestrutura inicial do MVP e pipelines de ingestão de dados consolidados com sucesso."
+            }
+        },
         {
-    id: "marketplace-equipistas - Freelance",
-    role: "Desenvolvedor Full Stack",
-    company: "Marketplace Entre Equipistas",
-    startYear: "Maio de 2026",
-    endYear: "Julho de 2026",
-    location: "Caruaru, PE (Remoto)",
-    icon: "/images/experience/equipistas.svg", 
-    roles: ["Desenvolvimento Full Stack", "Clean Architecture", "Next.js", "Node.js", "Modelagem de Dados"],
-    shortSummary: "Desenvolvimento ponta a ponta de um marketplace privado e seguro para uma comunidade em Caruaru. Arquitetura robusta com Node.js, TypeScript e Clean Architecture no backend, integrada a uma interface web moderna em Next.js 14.",
-    projectLinks: [
+            id: "marketplace-equipistas - Freelance",
+            role: "Desenvolvedor Full Stack",
+            company: "Marketplace Entre Equipistas",
+            startYear: "Maio de 2026",
+            endYear: "Julho de 2026",
+            location: "Caruaru, PE (Remoto)",
+            icon: "/images/experience/equipistas.svg", 
+            roles: ["Desenvolvimento Full Stack", "Clean Architecture", "Next.js", "Node.js", "Modelagem de Dados"],
+            shortSummary: "Desenvolvimento ponta a ponta de um marketplace privado e seguro para uma comunidade em Caruaru. Arquitetura robusta com Node.js, TypeScript e Clean Architecture no backend, integrada a uma interface web moderna em Next.js 14.",
+            projectLinks: [
                 { label: "Github - Backend", url: "https://github.com/micaellimaj/MarketPlace-Entre-Equipistas-Backend", icon: <Github size={12} /> },
-                 { label: "Github - Frontend", url: "https://github.com/micaellimaj/MarketPlace-Entre-Equipistas-frontend", icon: <Github size={12} /> },
+                { label: "Github - Frontend", url: "https://github.com/micaellimaj/MarketPlace-Entre-Equipistas-frontend", icon: <Github size={12} /> },
             ],
-    fullDetails: {
-        situacao: "Necessidade de um ecossistema digital exclusivo e seguro para a comunidade de equipistas de um grupo religioso gerenciar, anunciar e comercializar produtos com painéis de controle restritos por perfil.",
-        tarefa: "Responsável pelo design da arquitetura técnica backend, modelagem do banco de dados relacional, desenvolvimento da interface web responsiva e integração desacoplada dos serviços.",
-        acoes: [
-            "Arquitetura Backend & SOLID: Construção de uma API REST modular em Node.js e TypeScript utilizando os princípios de Clean Architecture e Use Cases para o isolamento completo das regras de negócio.",
-            "Persistência & Infraestrutura Cloud: Modelagem e gerenciamento do banco de dados relacional PostgreSQL via Prisma ORM com controle de histórico por Migrations e hospedagem no ecossistema Supabase.",
-            "Segurança & Moderação: Implementação de middlewares para validação de tokens JWT, proteção de endpoints sensíveis e criação de um módulo administrativo para controle e moderação de contas de usuários.",
-            "Interface Web Moderna: Desenvolvimento do front-end em Next.js 14 utilizando App Router para navegação otimizada, Tailwind CSS e Shadcn UI para componentes de interface fluidos e reutilizáveis.",
-            "Gerenciamento de Estado & Consumo de API: Centralização das chamadas HTTP em uma camada dedicada de Services com Axios e controle de estados globais via Context API para autenticação e feedbacks visuais."
-        ],
-        resultados: "Plataforma estável, segura e escalável entregue com sucesso, contando com tipagem estática de ponta a ponta e uma arquitetura resiliente preparada para futuras expansões sem acoplamento."
-    }
-},
-
+            fullDetails: {
+                situacao: "Necessidade de um ecossistema digital exclusivo e seguro para a comunidade de equipistas de um grupo religioso gerenciar, anunciar e comercializar produtos com painéis de controle restritos por perfil.",
+                tarefa: "Responsável pelo design da arquitetura técnica backend, modelagem do banco de dados relacional, desenvolvimento da interface web responsiva e integração desacoplada dos serviços.",
+                acoes: [
+                    "Arquitetura Backend & SOLID: Construção de uma API REST modular em Node.js e TypeScript utilizando os princípios de Clean Architecture e Use Cases para o isolamento completo das regras de negócio.",
+                    "Persistência & Infraestrutura Cloud: Modelagem e gerenciamento do banco de dados relacional PostgreSQL via Prisma ORM com controle de histórico por Migrations e hospedagem no ecossistema Supabase.",
+                    "Segurança & Moderação: Implementação de middlewares para validação de tokens JWT, proteção de endpoints sensíveis e criação de um módulo administrativo para controle e moderação de contas de usuários.",
+                    "Interface Web Moderna: Desenvolvimento do front-end em Next.js 14 utilizando App Router para navegação otimizada, Tailwind CSS e Shadcn UI para componentes de interface fluidos e reutilizáveis.",
+                    "Gerenciamento de Estado & Consumo de API: Centralização das chamadas HTTP em uma camada dedicada de Services com Axios e controle de estados globais via Context API para autenticação e feedbacks visuais."
+                ],
+                resultados: "Plataforma estável, segura e escalável entregue com sucesso, contando com tipagem estática de ponta a ponta e uma arquitetura resiliente preparada para futuras expansões sem acoplamento."
+            }
+        },
         {
             id: "cr-cursos",
             role: "Desenvolvedor Freelance Android/Full Stack",
@@ -163,8 +161,8 @@ const Experience = () => {
             shortSummary: "Desenvolvimento de sistemas de gestão (Java/Spring) e sites institucionais responsivos.",
             projectLinks: [
                 { label: "Dinha Kids - Git", url: "https://github.com/micaellimaj/Sistema_Dinha_Kids", icon: <Github size={12} /> },
-                { label: "Dinha Kids - Documentação", url: "https://docs.google.com/document/d/1Euuo8tCh54hrV0XyW2pHWVBSirZnhpLjRUxGRz9b5sI/edit?tab=t.0", icon: <FileText size={12} /> },
-                { label: "Dinha Kids - Apresentação", url: "https://www.canva.com/design/DAGghIXAI9w/AellKNqh-d12lPLR3W48EA/view?utm_content=DAGghIXAI9w&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc99da75059", icon: <PlayCircle size={12} /> },
+                { label: "Dinha Kids - Doc", url: "https://docs.google.com/document/d/1Euuo8tCh54hrV0XyW2pHWVBSirZnhpLjRUxGRz9b5sI/edit?tab=t.0", icon: <FileText size={12} /> },
+                { label: "Dinha Kids - Apresentação", url: "https://www.canva.com/design/DAGghIXAI9w/AellKNqh-d12lPLR3W48EA/view", icon: <PlayCircle size={12} /> },
                 { label: "Fundação Macedo - Git", url: "https://github.com/micaellimaj/Site_Fundacao_Macedo", icon: <Github size={12} /> },
                 { label: "Fundação Macedo - Live Site", url: "https://fundacaomacedo.netlify.app/", icon: <Globe size={12} /> }
             ],
@@ -196,74 +194,105 @@ const Experience = () => {
                     <div className="border-t border-primary/10">
                         <div className="max-w-3xl mx-auto px-4 sm:px-7 py-6">
                             {experienceData.map((item) => (
-                                <div key={item.id} className="group border-b border-primary/5 last:border-0 py-8 first:pt-4">
+                                <div key={item.id} className="group border-b border-primary/10 last:border-0 py-8 first:pt-4">
                                     <div className="flex flex-col gap-4">
+                                        
                                         {/* Header: Cargo e Data */}
-                                        <div className="flex flex-wrap items-start justify-between gap-4">
-                                            <div className="flex items-center gap-4">
-                                                <div className="w-10 h-10 rounded-xl bg-primary/5 flex items-center justify-center border border-primary/10 group-hover:scale-110 transition-transform">
-                                                    <Image src={item.icon} alt={item.company} width={24} height={24} />
+                                        <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3">
+                                            <div className="flex items-start gap-4">
+                                                <div className="w-10 h-10 rounded-xl bg-white dark:bg-zinc-800 flex items-center justify-center border border-zinc-200 dark:border-zinc-700 shrink-0 group-hover:scale-105 transition-transform shadow-sm">
+                                                    <Image src={item.icon} alt={item.company} width={22} height={22} className="object-contain" />
                                                 </div>
                                                 <div>
-                                                    <h5 className="text-base font-bold text-primary leading-tight">{item.role}</h5>
-                                                    <p className="text-xs text-secondary mt-1">{item.company} • {item.location}</p>
+                                                    <h4 className="text-base font-bold text-foreground leading-tight">{item.role}</h4>
+                                                    <p className="text-xs text-muted-foreground font-medium mt-1">{item.company} • {item.location}</p>
                                                 </div>
                                             </div>
-                                            <div className="bg-primary/[0.03] border border-primary/10 rounded-full px-3 py-1 text-[10px] font-bold text-primary uppercase tracking-wider">
-                                                {item.startYear} — {item.endYear}
+                                            
+                                            {/* Badge de Data com gradiente da página de certificados */}
+                                            <div className="self-start sm:self-auto p-[1px] rounded-full transition-all duration-300 hover:bg-[linear-gradient(96.09deg,_#9282F8_12.17%,_#F3CA4D_90.71%)] hover:scale-[1.02]">
+                                                <div className="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-card border border-primary/10 text-primary group-hover:border-transparent transition-colors">
+                                                    {item.startYear} — {item.endYear}
+                                                </div>
                                             </div>
                                         </div>
 
                                         {/* Resumo Curto */}
-                                        <p className="text-sm text-secondary leading-relaxed pl-14">
+                                        <p className="text-sm text-muted-foreground leading-relaxed sm:pl-14">
                                             {item.shortSummary}
                                         </p>
 
-                                        {/* Tags de Tecnologias (Roles) */}
-                                        <div className="flex flex-wrap gap-1.5 pl-14 mt-1">
+                                        {/* Tags de Habilidades com gradiente da página de certificados */}
+                                        <div className="flex flex-wrap gap-1.5 sm:pl-14">
                                             {item.roles.map((tech, idx) => (
-                                                <span key={idx} className="px-2 py-0.5 rounded-md bg-primary/[0.03] border border-primary/5 text-[9px] font-semibold text-primary/70 uppercase">
-                                                    {tech}
-                                                </span>
+                                                <div 
+                                                    key={idx}
+                                                    className="p-[1px] rounded-md transition-all duration-300 hover:bg-[linear-gradient(96.09deg,_#9282F8_12.17%,_#F3CA4D_90.71%)] hover:scale-[1.05]"
+                                                >
+                                                    <span className="block px-2 py-0.5 rounded-[5px] text-[10px] font-semibold uppercase tracking-wide bg-card border border-primary/10 text-primary group-hover:border-transparent transition-colors">
+                                                        {tech}
+                                                    </span>
+                                                </div>
                                             ))}
                                         </div>
 
                                         {/* Links Rápidos */}
                                         {item.projectLinks && (
-                                            <div className="flex flex-wrap gap-2 pl-14 mt-1">
+                                            <div className="flex flex-wrap gap-2 sm:pl-14">
                                                 {item.projectLinks.map((link, idx) => (
-                                                    <a key={idx} href={link.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-tighter text-primary/60 hover:text-primary transition-colors border border-primary/10 rounded px-2 py-1">
-                                                        {link.icon} {link.label}
-                                                    </a>
+                                                    <div
+                                                        key={idx}
+                                                        className="p-[1px] rounded transition-all duration-300 hover:bg-[linear-gradient(96.09deg,_#9282F8_12.17%,_#F3CA4D_90.71%)] hover:scale-[1.02]"
+                                                    >
+                                                        <a 
+                                                            href={link.url} 
+                                                            target="_blank" 
+                                                            rel="noopener noreferrer" 
+                                                            className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-tight text-foreground/80 bg-card border border-primary/10 rounded px-2.5 py-1 hover:border-transparent transition-colors"
+                                                        >
+                                                            {link.icon} {link.label}
+                                                        </a>
+                                                    </div>
                                                 ))}
                                             </div>
                                         )}
 
                                         {/* Detalhes Expandidos (Padrão STAR) */}
-                                        <div className={`pl-14 overflow-hidden transition-all duration-500 ease-in-out ${expandedId === item.id ? 'max-h-[1000px] opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
-                                            <div className="grid gap-6 border-l border-primary/10 pl-6 py-2">
+                                        <div className={`sm:pl-14 overflow-hidden transition-all duration-500 ease-in-out ${expandedId === item.id ? 'max-h-[1200px] opacity-100 mt-2' : 'max-h-0 opacity-0'}`}>
+                                            <div className="grid gap-5 border-l-2 border-primary/20 pl-4 sm:pl-6 py-2 bg-primary/[0.02] dark:bg-primary/[0.05] rounded-r-xl">
                                                 <div>
-                                                    <div className="flex items-center gap-2 text-[10px] font-black text-primary uppercase mb-2 tracking-widest"><Rocket size={12}/> Situação</div>
-                                                    <p className="text-sm text-secondary">{item.fullDetails.situacao}</p>
+                                                    <div className="flex items-center gap-2 text-xs font-bold text-primary uppercase mb-1 tracking-wider">
+                                                        <Rocket size={14} /> Situação
+                                                    </div>
+                                                    <p className="text-sm text-muted-foreground">{item.fullDetails.situacao}</p>
                                                 </div>
+
                                                 <div>
-                                                    <div className="flex items-center gap-2 text-[10px] font-black text-primary uppercase mb-2 tracking-widest"><Target size={12}/> Tarefa</div>
-                                                    <p className="text-sm text-secondary">{item.fullDetails.tarefa}</p>
+                                                    <div className="flex items-center gap-2 text-xs font-bold text-primary uppercase mb-1 tracking-wider">
+                                                        <Target size={14} /> Tarefa
+                                                    </div>
+                                                    <p className="text-sm text-muted-foreground">{item.fullDetails.tarefa}</p>
                                                 </div>
+
                                                 <div>
-                                                    <div className="flex items-center gap-2 text-[10px] font-black text-primary uppercase mb-2 tracking-widest"><Wrench size={12}/> Ações</div>
-                                                    <ul className="space-y-2 mt-2">
+                                                    <div className="flex items-center gap-2 text-xs font-bold text-primary uppercase mb-1 tracking-wider">
+                                                        <Wrench size={14} /> Ações
+                                                    </div>
+                                                    <ul className="space-y-2 mt-1.5">
                                                         {item.fullDetails.acoes.map((acao, idx) => (
-                                                            <li key={idx} className="text-sm text-secondary flex items-start gap-2">
-                                                                <span className="text-primary mt-1.5 w-1 h-1 rounded-full bg-primary shrink-0" />
-                                                                {acao}
+                                                            <li key={idx} className="text-sm text-muted-foreground flex items-start gap-2.5">
+                                                                <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                                                                <span>{acao}</span>
                                                             </li>
                                                         ))}
                                                     </ul>
                                                 </div>
+
                                                 <div>
-                                                    <div className="flex items-center gap-2 text-[10px] font-black text-primary uppercase mb-2 tracking-widest"><Award size={12}/> Resultados</div>
-                                                    <p className="text-sm text-secondary font-medium italic">{item.fullDetails.resultados}</p>
+                                                    <div className="flex items-center gap-2 text-xs font-bold text-primary uppercase mb-1 tracking-wider">
+                                                        <Award size={14} /> Resultados
+                                                    </div>
+                                                    <p className="text-sm text-foreground font-medium italic">{item.fullDetails.resultados}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -271,7 +300,7 @@ const Experience = () => {
                                         {/* Botão de Expansão */}
                                         <button 
                                             onClick={() => toggleExpand(item.id)}
-                                            className="ml-14 w-fit flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-primary hover:opacity-70 transition-opacity mt-2"
+                                            className="sm:ml-14 w-fit flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-primary hover:opacity-80 transition-opacity mt-1 cursor-pointer"
                                         >
                                             {expandedId === item.id ? "Recolher detalhes" : "Ver detalhes da experiência"}
                                             <ChevronDown size={14} className={`transition-transform duration-300 ${expandedId === item.id ? "rotate-180" : ""}`} />
