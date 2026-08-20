@@ -92,7 +92,8 @@ const FeaturedWork = () => {
             image: "/images/feature-work/projetosql.png",
             roles: ["SQL", "AWS", "Data Analysis", "ETL"],
             github_url: "https://github.com/micaellimaj/Analise-de-dados-SQL-Desempenho-estudantil",
-            slides_url: "https://desempenho-estudantil-sql.my.canva.site/"
+            slides_url: "https://desempenho-estudantil-sql.my.canva.site/",
+            deploy_url: "https://app.powerbi.com/view?r=eyJrIjoiNjhkMGNlYmQtNmRkMi00MTJhLTliZDMtYTRhZGEzZGNlNWJlIiwidCI6IjUxZGQ3ZDM4LTYwNzctNDgzNy1hYTE0LWFlNDNmZThiM2ViMCJ9"
         },
         {
             title: "Painel de BI para Instituição Financeira - Banvic",
@@ -148,15 +149,7 @@ const FeaturedWork = () => {
             roles: ["Power BI", "DAX", "Financial Analysis", "UX Design"],
             deploy_url: "https://bit.ly/Micael-Lima-Analista-de-dados-Relatorio-supermercados"
         },
-        {
-            title: "Student Wellness — Análise Comportamental",
-            date: "Indeterminado",
-            category: "Power BI",
-            description: "Estudo do impacto do álcool no desempenho acadêmico. Desafio superado na visualização de dados majoritariamente categóricos, criando correlações entre hábitos de consumo, notas e vida familiar com filtros dinâmicos por escola e gênero.",
-            image: "/images/feature-work/escola.png",
-            roles: ["Power BI", "Data Analytics", "Categorial Data", "Social Insights"],
-            deploy_url: "https://app.powerbi.com/view?r=eyJrIjoiNjhkMGNlYmQtNmRkMi00MTJhLTliZDMtYTRhZGEzZGNlNWJlIiwidCI6IjUxZGQ3ZDM4LTYwNzctNDgzNy1hYTE0LWFlNDNmZThiM2ViMCJ9"
-        },
+
     ];
 
     const filteredProjects = filter === "Todos"
