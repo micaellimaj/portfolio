@@ -65,8 +65,7 @@ const Experience = () => {
             roles: ["Desenvolvimento Full Stack", "Clean Architecture", "Next.js", "Node.js", "Modelagem de Dados"],
             shortSummary: "Desenvolvimento ponta a ponta de um marketplace privado e seguro para uma comunidade em Caruaru. Arquitetura robusta com Node.js, TypeScript e Clean Architecture no backend, integrada a uma interface web moderna em Next.js 14.",
             projectLinks: [
-                { label: "Github - Backend", url: "https://github.com/micaellimaj/MarketPlace-Entre-Equipistas-Backend", icon: <Github size={12} /> },
-                { label: "Github - Frontend", url: "https://github.com/micaellimaj/MarketPlace-Entre-Equipistas-frontend", icon: <Github size={12} /> },
+                { label: "Apresentação", url: "https://market-place-entre-equipistas-visua.vercel.app/", icon: <Globe size={12} /> },
             ],
             fullDetails: {
                 situacao: "Necessidade de um ecossistema digital exclusivo e seguro para a comunidade de equipistas de um grupo religioso gerenciar, anunciar e comercializar produtos com painéis de controle restritos por perfil.",

@@ -15,6 +15,14 @@ const AboutMe = () => {
         "DevOps & CI/CD", 
         "Agile Methodologies", 
         "Version Control (Git)",
+        "Docker",
+        "Databricks",
+        "APIs",
+        "AWS & GCP",
+        "Automation",
+        "n8n",
+        "ETL & ELT",
+        
     ];
 
     return (

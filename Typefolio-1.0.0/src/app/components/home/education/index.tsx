@@ -51,6 +51,9 @@ const Education = () => {
     ];
 
     const certificateData: CertificateItem[] = [
+        { platform: "Xperiun", course: "Databricks & Delta Lake", date: "Agosto 2026" },
+        { platform: "Xperiun", course: "Docker & Containers", date: "Agosto 2026" },
+        { platform: "EF SET", course: "SET English Certificate 49/100 (B1 Intermediate)", date: "Julho 2026" },
         { platform: "Xperiun", course: "APIs e Integração de dados", date: "Julho 2026" },
         { platform: "Xperiun", course: "Engenharia de Dados em Cloud", date: "Junho 2026" },
         { platform: "Xperiun", course: "Pandas para Análise Avançadas com Python", date: "Maio 2026" },
