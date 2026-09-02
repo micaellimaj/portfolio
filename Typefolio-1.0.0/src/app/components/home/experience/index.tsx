@@ -34,7 +34,7 @@ const Experience = () => {
     const experienceData: ExperienceItem[] = [
         {
             id: "portal-stricto",
-            role: "Desenvolvedor Backend (MVP) - Voluntário",
+            role: "Engenheiro de Software - Autônomo",
             company: "Portal Stricto",
             startYear: "Junho de 2026",
             endYear: "Em Andamento",
