@@ -46,6 +46,28 @@ const FeaturedWork = () => {
             github_url: "https://github.com/micaellimaj/desafio-gdash-2025-02/tree/main"
         },
         {
+            title: "Painel de BI para Instituição Financeira - Banvic",
+            date: "Agosto de 2025",
+            category: "Power BI",
+            description: "Projeto de modernização analítica focado na transição de uma cultura de dados para uma gestão estratégica.",
+            image: "/images/feature-work/banvic.png",
+            roles: ["DAX", "Power BI", "KPIs", "Data Modeling"],
+            github_url: "https://github.com/micaellimaj/Banvic-Data-Analytics",
+            doc_url: "https://www.canva.com/design/DAGyVw_Dujw/spEMGroQSQcXudaAa-yJQg/view?utm_content=DAGyVw_Dujw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0ca5afcf9e",
+            deploy_url: "https://bit.ly/Painel-Banvic"
+        },
+         {
+            title: "Análise de Dados Com SQL - Desempenho Estudantil",
+            date: "Julho de 2025",
+            category: "Analytics",
+            description: "Projeto de análise de dados educacionais utilizando SQL para identificar padrões de desempenho estudantil.",
+            image: "/images/feature-work/projetosql.png",
+            roles: ["SQL", "AWS", "Data Analysis", "ETL"],
+            github_url: "https://github.com/micaellimaj/Analise-de-dados-SQL-Desempenho-estudantil",
+            slides_url: "https://desempenho-estudantil-sql.my.canva.site/",
+            deploy_url: "https://app.powerbi.com/view?r=eyJrIjoiNjhkMGNlYmQtNmRkMi00MTJhLTliZDMtYTRhZGEzZGNlNWJlIiwidCI6IjUxZGQ3ZDM4LTYwNzctNDgzNy1hYTE0LWFlNDNmZThiM2ViMCJ9"
+        },
+        {
             title: "Desafio Back-End - Mario Maker API",
             date: "Maio de 2025",
             category: "Dev",
@@ -83,28 +105,6 @@ const FeaturedWork = () => {
                     avatar_url: "https://avatars.githubusercontent.com/u/179267458?v=4"
                 }
             ]
-        },
-        {
-            title: "Análise de Dados Com SQL - Desempenho Estudantil",
-            date: "Julho de 2025",
-            category: "Analytics",
-            description: "Projeto de análise de dados educacionais utilizando SQL para identificar padrões de desempenho estudantil.",
-            image: "/images/feature-work/projetosql.png",
-            roles: ["SQL", "AWS", "Data Analysis", "ETL"],
-            github_url: "https://github.com/micaellimaj/Analise-de-dados-SQL-Desempenho-estudantil",
-            slides_url: "https://desempenho-estudantil-sql.my.canva.site/",
-            deploy_url: "https://app.powerbi.com/view?r=eyJrIjoiNjhkMGNlYmQtNmRkMi00MTJhLTliZDMtYTRhZGEzZGNlNWJlIiwidCI6IjUxZGQ3ZDM4LTYwNzctNDgzNy1hYTE0LWFlNDNmZThiM2ViMCJ9"
-        },
-        {
-            title: "Painel de BI para Instituição Financeira - Banvic",
-            date: "Agosto de 2025",
-            category: "Power BI",
-            description: "Projeto de modernização analítica focado na transição de uma cultura de dados para uma gestão estratégica.",
-            image: "/images/feature-work/banvic.png",
-            roles: ["DAX", "Power BI", "KPIs", "Data Modeling"],
-            github_url: "https://github.com/micaellimaj/Banvic-Data-Analytics",
-            doc_url: "https://www.canva.com/design/DAGyVw_Dujw/spEMGroQSQcXudaAa-yJQg/view?utm_content=DAGyVw_Dujw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0ca5afcf9e",
-            deploy_url: "https://bit.ly/Painel-Banvic"
         },
         {
             title: "Painel Interativo de Perfil de Compra de Clientes",
