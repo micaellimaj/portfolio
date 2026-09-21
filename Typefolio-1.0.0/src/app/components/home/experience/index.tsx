@@ -32,6 +32,7 @@ const Experience = () => {
     const [expandedId, setExpandedId] = useState<string | null>(null);
 
     const experienceData: ExperienceItem[] = [
+        /* 
         {
             id: "portal-stricto",
             role: "Engenheiro de Software - Autônomo",
@@ -54,12 +55,13 @@ const Experience = () => {
                 resultados: "Infraestrutura inicial do MVP e pipelines de ingestão de dados consolidados com sucesso."
             }
         },
+        */
         {
             id: "marketplace-equipistas - Autônomo",
             role: "Desenvolvedor Full Stack",
             company: "Marketplace Entre Equipistas",
             startYear: "Maio de 2026",
-            endYear: "Agosto de 2026",
+            endYear: "Setembro de 2026",
             location: "Caruaru, PE (Remoto)",
             icon: "/images/experience/equipistas.svg", 
             roles: [
