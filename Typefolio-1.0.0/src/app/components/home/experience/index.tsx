@@ -67,27 +67,27 @@ const Experience = () => {
             roles: [
                 "Desenvolvimento Full Stack", 
                 "Clean Architecture & SOLID", 
-                "Next.js 14", 
-                "Node.js & TypeScript", 
-                "Prisma & PostgreSQL",
-                "Supabase Cloud"
+                "React 19 & Next.js 16 (App Router)", 
+                "Node.js, Express 5 & TypeScript 6", 
+                "Prisma ORM 6 & PostgreSQL (Supabase)",
+                "Dashboards & Analytics (Recharts)"
             ],
-            shortSummary: "Desenvolvimento ponta a ponta de um marketplace privado e seguro para uma comunidade em Caruaru. Arquitetura robusta em Node.js com Clean Architecture e Use Cases no backend, integrada a uma interface moderna em Next.js 14 com suporte a temas (Light/Dark Mode), avaliações, métricas e gestão completa de mídias.",
+            shortSummary: "Engenharia ponta a ponta de um marketplace privado e regionalizado para uma comunidade em Caruaru. Arquitetura robusta em Node.js (Express 5/Clean Architecture), integrada a uma interface reativa em Next.js 16 com suporte a 4 perfis de acesso, dashboards gráficos com Recharts, tratamento de imagens com Sharp, suporte a temas (Light/Dark Mode) e validação estrita via Zod.",
             projectLinks: [
                 { label: "Apresentação", url: "https://market-place-entre-equipistas-visua.vercel.app/", icon: <Globe size={12} /> },
             ],
             fullDetails: {
-                situacao: "Necessidade de um ecossistema digital exclusivo, seguro e intuitivo para a comunidade de equipistas de um grupo religioso gerenciar, anunciar, comprar, avaliar e comercializar produtos, contando com painéis de controle restritos por perfil (comprador, vendedor e administrador).",
-                tarefa: "Responsável pelo design da arquitetura técnica backend, modelagem avançada do banco de dados relacional, implementação de serviços de mídia/storage, desenvolvimento da interface web responsiva com personalização visual (Light/Dark Mode) e integração desacoplada dos serviços.",
+                situacao: "Necessidade de um ecossistema digital exclusivo, seguro e intuitivo para a comunidade de equipistas gerenciar, anunciar, comprar, avaliar e comercializar produtos, contando com divisão regional por setores geográficos e painéis de controle restritos por perfil (Visitante, Equipista comprador/vendedor, Representante regional e Administrador global).",
+                tarefa: "Responsável pela engenharia full stack ponta a ponta: arquitetura técnica do backend RESTful, modelagem avançada do banco de dados relacional, dashboards gráficos de vendas e presença regional, otimização de mídias em memória, interface web responsiva com personalização visual (Light/Dark Mode) e integração desacoplada dos serviços.",
                 acoes: [
-                    "Arquitetura Backend & SOLID: Construção de uma API REST modular em Node.js e TypeScript com Clean Architecture, isolando as regras de negócio em Use Cases para os domínios de Auth, Users, Products, Favorites, Ratings, PurchasedProducts, SoldProducts, Addresses e Admin.",
-                    "Persistência & Mídia em Nuvem: Modelagem relacional no PostgreSQL via Prisma ORM com controle de versionamento por Migrations e hospedagem no Supabase, integrada ao Supabase Storage para gerenciamento dinâmico de fotos de perfil (avatar), capas e mídias de anúncios.",
-                    "Recursos do E-commerce & Reputação: Implementação de módulos completos para lista de favoritos, controle de produtos comprados e vendidos com consolidação de métricas financeiras, e sistema completo de qualificações com notas, comentários e estatísticas do vendedor.",
-                    "Segurança & Moderação: Proteção de endpoints via middlewares JWT (ensureAuthenticated.ts) e desenvolvimento de painel administrativo restrito para gestão de membros, ativação, suspensão e moderação do ecossistema.",
-                    "Interface Web & Suporte a Temas: Desenvolvimento do front-end em Next.js 14 (App Router) com Tailwind CSS, componentes Shadcn UI, suporte nativo a temas (Light/Dark Mode) e navegação reativa.",
-                    "Camada HTTP & Estado Global: Centralização das requisições REST em uma camada de Services desacoplada com Axios, gerenciamento de sessão via AuthContext e tipagem estática de ponta a ponta em TypeScript."
+                    "Arquitetura Backend & SOLID: Construção de uma API RESTful modular em Express 5 e TypeScript 6 com Clean Architecture e Use Cases, isolando os domínios de Auth, Users, Products, Favorites, Ratings, PurchasedProducts, SoldProducts, Addresses, Sectors, Representatives e Admin.",
+                    "Persistência & Mídia em Memória: Modelagem relacional no PostgreSQL via Prisma ORM 6 (Supabase) com Migrations, autenticação BcryptJS e pipeline de upload com interceptação/compressão de buffers de imagem via Sharp antes do salvamento no Supabase Storage.",
+                    "Dashboards Analíticos & Formulários: Construção de painéis com gráficos interativos em Recharts para métricas financeiras, volume de vendas e reputação, além de validação estrita de esquemas e DTOs via React Hook Form + Zod.",
+                    "Segurança & Controle Hierárquico: Autenticação baseada em JWT, middlewares globais de proteção (ensureAuthenticated.ts), WebSockets (ws) e painéis administrativos para moderação global de usuários e supervisão regional de membros por representantes.",
+                    "Interface Web & Suporte a Temas: Front-end reativo construído com React 19 e Next.js 16 (App Router), estilizado com Tailwind CSS 4, Radix UI, componentes Shadcn UI, corte interativo de foto de perfil/capa (react-easy-crop) e alternância de temas (Light/Dark Mode via next-themes).",
+                    "Camada HTTP & Estado Global: Centralização das requisições REST em uma camada de Services desacoplada com Axios, feedback em tempo real com Sonner/Toasts, gerenciamento de sessão via AuthContext e tipagem estática de ponta a ponta em TypeScript."
                 ],
-                resultados: "Plataforma e-commerce completa, estável e escalável entregue com sucesso, cobrindo todo o ciclo de vida da negociação e reputação dos membros com alto padrão de segurança, manutenibilidade e desacoplamento visual e estrutural."
+                resultados: "Plataforma e-commerce completa, altamente performática e resiliente entregue com sucesso, cobrindo todo o ciclo de vida da negociação, reputação e moderação com alto padrão de segurança, manutenibilidade e escalabilidade."
             }
         },
         {
