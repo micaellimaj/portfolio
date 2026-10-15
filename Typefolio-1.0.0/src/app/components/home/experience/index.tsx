@@ -57,7 +57,7 @@ const Experience = () => {
         },
         */
         {
-            id: "marketplace-equipistas - Autônomo",
+            id: "marketplace-equipistas - Voluntário ",
             role: "Desenvolvedor Full Stack",
             company: "Marketplace Entre Equipistas",
             startYear: "Maio de 2026",
@@ -92,7 +92,7 @@ const Experience = () => {
         },
         {
             id: "cr-cursos",
-            role: "Desenvolvedor Freelance Android/Full Stack",
+            role: "Desenvolvedor Voluntário Android/Full Stack",
             company: "CR Cursos",
             startYear: "Maio de 2025",
             endYear: "Julho de 2026",
@@ -117,7 +117,7 @@ const Experience = () => {
         },
         {
             id: "siapesq",
-            role: "Estagiário de Desenvolvimento Full-Stack",
+            role: "Estagiário Voluntário de Desenvolvimento Full-Stack",
             company: "SIAPESQ",
             startYear: "Maio de 2025",
             endYear: "Dezembro de 2025",
@@ -160,7 +160,7 @@ const Experience = () => {
         },
         {
             id: "freelance-web",
-            role: "Desenvolvedor Web Freelance",
+            role: "Desenvolvedor Web",
             company: "Projetos Diversos",
             startYear: "Outubro de 2023",
             endYear: "Abril de 2024",
