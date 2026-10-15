@@ -57,8 +57,8 @@ const Experience = () => {
         },
         */
         {
-            id: "marketplace-equipistas - Voluntário ",
-            role: "Desenvolvedor Full Stack",
+            id: "marketplace-equipistas",
+            role: "Desenvolvedor Full Stack - Voluntário",
             company: "Marketplace Entre Equipistas",
             startYear: "Maio de 2026",
             endYear: "Setembro de 2026",
@@ -160,7 +160,7 @@ const Experience = () => {
         },
         {
             id: "freelance-web",
-            role: "Desenvolvedor Web",
+            role: "Desenvolvedor Web Freelance",
             company: "Projetos Diversos",
             startYear: "Outubro de 2023",
             endYear: "Abril de 2024",
