@@ -160,7 +160,7 @@ const Experience = () => {
         },
         {
             id: "freelance-web",
-            role: "Desenvolvedor Web Freelance",
+            role: "Desenvolvedor Web",
             company: "Projetos Diversos",
             startYear: "Outubro de 2023",
             endYear: "Abril de 2024",
